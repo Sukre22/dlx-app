@@ -10,11 +10,11 @@ export default class AppMenu extends Component {
     render() {
  
         let menus = [
-            "Home",
-            "Service",
-            "Delivery",
-            "Contacts",
-            "Partners" 
+            "Введение",
+            "Основные понятия и определения",
+            "Знакомство с интерфейсом программы",
+            "Моделирование освещаемого объекта",
+
          ];
 
          const menusItems = menus.map((value) =>
