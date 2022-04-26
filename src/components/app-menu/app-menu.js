@@ -17,7 +17,7 @@ export default class AppMenu extends Component {
             "Partners" 
          ];
 
-         const menusItems = menus.map(([value]) =>
+         const menusItems = menus.map((value) =>
 
          <li>{value}</li>
 
