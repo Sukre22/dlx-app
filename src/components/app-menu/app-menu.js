@@ -42,7 +42,9 @@ export default class AppMenu extends Component {
 			   <li class="week"><a data-tooltip="Практика" href="section-7.html">7 Практика</a></li>
 			   <li class="second"><a data-tooltip="Расчет наружного освещения" href="section-7.1.html">7.1 Расчет наружного освещения</a></li>
 			   <li class="second"><a data-tooltip="Расчет периметрального освещения" href="section-7.2.html">7.2 Расчет периметрального освещения</a></li>
+               <Tooltip title="Расчет спортивной площадки с учетом UGR-показателя" placement="right">
 			   <li class="second"><a data-tooltip="Расчет спортивной площадки с учетом UGR-показателя" href="section-7.3.html">7.3 Расчет спортивной площадки с учетом UGR-показателя</a></li>
+               </Tooltip>
 			   <li class="second"><a data-tooltip="Расчет спортивной площадки с учетом GR-показателя" href="section-7.4.html">7.4 Расчет спортивной площадки с учетом GR-показателя</a></li>
 			   <li class="week"><a data-tooltip="Заключение" href="section-8.html">8 Заключение</a></li>
 			</ul>
