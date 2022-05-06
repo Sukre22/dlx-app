@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app-menu.scss';
+import Tooltip from '@mui/material/Tooltip';
 
 export default class AppMenu extends Component {
 
@@ -17,11 +18,15 @@ export default class AppMenu extends Component {
             <div class="menu">
 					
 			<ul class="list-unstyled">
-            
-			   <li class="week" id="week2"><a data-tooltip="Введение" href="section-1.html">1 Введение</a></li>
-               <Button variant="contained">Contained</Button>
+            <Tooltip title="Введение" placement="right">
+			   <li class="week" id="week2">1 Введение</li>
+               </Tooltip>
+               <Tooltip title="Основные понятия и определения" placement="right">
 			   <li class="week"><a data-tooltip="Основные понятия и определения"  href="section-2.html">2 Основные понятия и определения</a></li>
+               </Tooltip>
+               <Tooltip title="Знакомство с интерфейсом программы" placement="right">
 			   <li class="week"><a data-tooltip="Знакомство с интерфейсом программы" href="section-3.html">3 Знакомство с интерфейсом программы</a></li>
+               </Tooltip>
 			   <li class="week"><a data-tooltip="Моделирование освещаемого объекта" href="section-4.html">4 Моделирование освещаемого объекта</a></li>
 			   <li class="second"><a data-tooltip="Импорт чертежей различных форматов" href="section-4.1.html">4.1 Импорт чертежей различных форматов</a></li>
 			   <li class="second"><a data-tooltip="Построение зданий и его помещений"  href="section-4.2.html">4.2 Построение зданий и его помещений</a></li>
