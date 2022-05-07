@@ -20,13 +20,8 @@ export default class AppMenu extends Component {
 			<ul class="list-unstyled">
 
 			   <li class="week" id="week2">1 Введение</li>
-
-
 			   <li class="week">2 Основные понятия и определения</li>
-
-
 			   <li class="week">3 Знакомство с интерфейсом программы</li>
-
 			   <li class="week">4 Моделирование освещаемого объекта</li>
 			   <li class="second">4.1 Импорт чертежей различных форматов</li>
 			   <li class="second">4.2 Построение зданий и его помещений</li>
@@ -42,11 +37,9 @@ export default class AppMenu extends Component {
 			   <li class="week">7 Практика</li>
 			   <li class="second">7.1 Расчет наружного освещения</li>
 			   <li class="second">7.2 Расчет периметрального освещения</li>
-
 			   <li class="second">7.3 Расчет спортивной площадки с учетом UGR-показателя</li>
-
 			   <li class="second">7.4 Расчет спортивной площадки с учетом GR-показателя</li>
-			   <li class="week">8 Заключение</li>
+			   <li class="week" id="week5">8 Заключение</li>
 			</ul>
 	 </div>
  
