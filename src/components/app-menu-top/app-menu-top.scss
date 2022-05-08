@@ -1,5 +1,6 @@
 .menu-top {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -28,4 +29,11 @@
 
 .menu-top_icons3 {
   margin-top: 5px;
+}
+
+.menu-top_icons1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
 }
