@@ -50,7 +50,7 @@ export default function AppMenuTop() {
                   </div>
                   <div class="menu-top_icons2">
                       <EmojiObjectsIcon fontSize="large"/>
-                      <p >Обучающий курс по Dialux Evo/Dialux 4.13</p>
+                      <p>Обучающий курс по Dialux Evo/Dialux 4.13</p>
                   </div>
 
               </div>
