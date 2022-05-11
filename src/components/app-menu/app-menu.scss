@@ -1,7 +1,4 @@
-body {
-	margin: 0 auto;
-	background-color: #f9f9f9;
-}
+
 
 .menu {		
 	/*visibility: hidden;*/
@@ -14,7 +11,7 @@ body {
 	width: 240px;
 	overflow-x: hidden;
 	background-color: #ffffff;
-	z-index: 1;	
+	z-index: 1;		
 }
 
 .second {
@@ -29,7 +26,6 @@ body {
 	/*margin-top: 30px;*/
 	font-weight: bold;
 	padding: 5px 5px 5px 15px;
-
 }
 
 #week3 {
@@ -48,11 +44,9 @@ body {
 	
 }
 
-#week2 {
-    margin-top: 0px;
+.week4 {
+    margin-top: 10px;
 }
-
-  
   
 
 .menu ul {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './app-menu.scss';
-import Tooltip from '@mui/material/Tooltip';
+
 
 export default class AppMenu extends Component {
 
@@ -8,18 +8,16 @@ export default class AppMenu extends Component {
 
 
 
-    render() {
- 
-
-       
+    render() {      
 
        
         return(
+			
             <div class="menu">
 					
 			<ul class="list-unstyled">
 
-			   <li class="week" id="week2" id="week3">1 Введение</li>
+			   <li class="week week4" id="week3">1 Введение</li>
 			   <li class="week" id="week3" >2 Основные понятия и определения</li>
 			   <li class="week" id="week3">3 Знакомство с интерфейсом программы</li>
 			   <li class="week">4 Моделирование освещаемого объекта</li>
@@ -42,6 +40,7 @@ export default class AppMenu extends Component {
 			   <li class="week" id="week5">8 Заключение</li>
 			</ul>
 	 </div>
+	 
  
         )
     }
