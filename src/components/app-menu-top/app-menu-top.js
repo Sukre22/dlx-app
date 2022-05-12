@@ -45,7 +45,7 @@ export default function AppMenuTop() {
                       <MenuIcon />
                   </div>
                   <div class="menu-top_icons2">
-                      <EmojiObjectsIcon fontSize="large"/>
+                      <EmojiObjectsIcon fontSize="large" />
                       <div>Обучающий курс по Dialux Evo/Dialux 4.13</div>
                   </div>
 
@@ -56,6 +56,7 @@ export default function AppMenuTop() {
                       <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick} />
                   </Stack>
                   <IconButton
+                      
                       size="large"
                       aria-label="account of current user"
                       aria-controls="menu-appbar"

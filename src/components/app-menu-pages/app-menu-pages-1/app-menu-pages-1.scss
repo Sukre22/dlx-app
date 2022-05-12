@@ -1,13 +1,15 @@
 .header {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 250px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.row {
+.header-top_row {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 10px;
+   
 
 }
 

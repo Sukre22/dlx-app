@@ -15,25 +15,19 @@ export default function AppMenuPages1() {
         
 		/*<div class="head">Привет</div>*/
         <>
-        <div class="header">
-		
-			
-				
+        <div class="header">					
 
 				<div class="header-top">
-					<div class="row">
+					<div class="header-top_row">
 					<div class="text-left">
-					<ChevronLeftIcon/> 
+					<ChevronLeftIcon fontSize="large"/> 
 					</div>
 						<div class="header-title">
 							<h2 class='work'>2 Основные понятия и определения</h2>							
 						</div>
 						<div class="text-right">
-						<ChevronRightIcon/> 
-						</div>
-						
-
-						
+						<ChevronRightIcon  fontSize="large"/> 
+						</div>						
 						
 					
 				
