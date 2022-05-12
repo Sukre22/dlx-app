@@ -1,6 +1,8 @@
 import { dividerClasses } from '@mui/material';
 import React, {Component} from 'react';
 import './app-menu-pages-1.scss';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 
 export default function AppMenuPages1() {
@@ -18,24 +20,21 @@ export default function AppMenuPages1() {
 			<div class="row">
 				
 
-				<div class="header-top col-12">
+				<div class="header-top">
 					<div class="row">
-						<div class="col-12 text-center header-title">
-							<h2 class='work'>2 Основные понятия и определения</h2>
-							<small class="text-muted">Основные понятия и определения</small>
+					<div class="text-left">
+					<ChevronLeftIcon/> 
+					</div>
+						<div class="header-title">
+							<h2 class='work'>2 Основные понятия и определения</h2>							
 						</div>
-						<div class="col-3 text-left">
-							<small class="text-muted">Предыдущий урок</small>
-							<a href="lesson09.html">Урок №9</a>
+						<div class="text-right">
+						<ChevronRightIcon/> 
 						</div>
-						<div class="col-6 text-center">
-							<small class="text-muted">18 из 41 уроков</small>
-							<p>Дата и время начала Пт 16 Фев 07:00</p>
-						</div>
-						<div class="col-3 text-right">
-							<small class="text-muted">Слелующий урок</small>
-							<a href="lesson_week2.html">2 неделя. Прямая трансляция</a>																								
-						</div>
+						
+
+						
+						
 					</div>
 				</div>
 			</div>
