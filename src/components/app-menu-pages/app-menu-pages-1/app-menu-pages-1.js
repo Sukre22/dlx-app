@@ -13,7 +13,7 @@ export default function AppMenuPages1() {
     return(
 
         
-		/*<div class="head">Привет</div>*/
+
         <>
         <div class="header">					
 
@@ -27,11 +27,22 @@ export default function AppMenuPages1() {
 						</div>
 						<div class="text-right">
 						<ChevronRightIcon  fontSize="large"/> 
-						</div>						
-						
+						</div>
 					
 				
 			</div>
+					<div class="header-title_wrapper">
+						<h3>Здравствуйте!</h3>
+						<p className="welcome">
+							В данном уроке мы познакомимся с основными понятиями и определениями, применяемыми в
+							светотехнике,
+							их необходимо знать для выполнения расчетов. Узнаем, как они связаны друг с другом и в чем
+							их измеряют.
+						</p>
+
+					</div>
+
+
 		</div>
 	</div>
 

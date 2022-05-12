@@ -1,14 +1,21 @@
 .header {
+    display: flex;
+    justify-content: center;
     padding-top: 60px;
     padding-left: 250px;
-    border-bottom: 1px solid #e5e5e5;
+    min-width: 500px;
+
+
 }
+
+
 
 .header-top_row {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
    
 
 }
@@ -29,6 +36,13 @@
 .text-right {
     display: flex;
     align-items: center;
+}
+
+.header-title_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1140px;
 }
 
 
