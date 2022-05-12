@@ -16,8 +16,8 @@ export default function AppMenuPages1() {
 		/*<div class="head">Привет</div>*/
         <>
         <div class="header">
-		<div class="container">
-			<div class="row">
+		
+			
 				
 
 				<div class="header-top">
@@ -35,8 +35,8 @@ export default function AppMenuPages1() {
 
 						
 						
-					</div>
-				</div>
+					
+				
 			</div>
 		</div>
 	</div>
