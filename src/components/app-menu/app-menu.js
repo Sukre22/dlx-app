@@ -39,6 +39,20 @@ export default class AppMenu extends Component {
 			   <li class="second" id="week3">7.4 Расчет спортивной площадки с учетом GR-показателя</li>
 			   <li class="week" id="week5">8 Заключение</li>
 			</ul>
+
+				<footer className="footer">
+
+
+					<div class="links">
+						<p><a href="#">О проекте</a></p>
+						<p><a href="#">Рекламодателям</a></p>
+						<p><a href="#">Сотрудничество</a></p>
+					</div>
+
+
+					<p class="copyright">© 2022 Copyright</p>
+
+				</footer>
 	 </div>
 	 
  
