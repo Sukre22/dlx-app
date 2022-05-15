@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './app-menu-pages-1.scss';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 
 
@@ -37,9 +38,28 @@ export default function AppMenuPages1() {
                     </div>
                 </div>
                 <div class="files">
-                    <p>Файлы</p>
+                        <h3>Файлы</h3>
+                        <div class="files_wrap">
+                            <div class="files_wrap-icon"><a href="#"><CloudDownloadIcon/></a></div>
+
+                            <a href="#" className="zip">05-maket.zip</a>
+                        </div>
 
                 </div>
+
+                <div class="task">
+                    <h3>Задание</h3>
+                    <ul className="task-text">
+
+                                <li>1) Обратите внимание, чтобы можно было подставить картинки любых размеров и они не
+                                    ломали вашу верстку
+                                </li>
+                                <li>2) Загрузить папку с проектом на свой хостинг</li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
             </div>

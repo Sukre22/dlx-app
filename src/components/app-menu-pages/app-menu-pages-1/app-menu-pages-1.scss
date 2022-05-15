@@ -11,3 +11,29 @@
   padding-bottom: 40px;
 }
 
+.files {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+}
+
+.files_wrap {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.files_wrap-icon {
+  padding-right: 10px;
+}
+
+.task {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+}
+
+.task-text {
+  padding-left: 30px;
+}
+
+
+
