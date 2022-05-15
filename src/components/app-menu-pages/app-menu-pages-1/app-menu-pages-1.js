@@ -29,9 +29,26 @@ export default function AppMenuPages1() {
 
 
                 </div>
+                <div className="header-title_wrapper-video">
+                    <div class="video">
+                        <video width="1140" controls="controls">
+                            {/*<source src="../video/05.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>*/}
+                        </video>
+                    </div>
+                </div>
+                <div class="files">
+                    <p>Файлы</p>
+
+                </div>
+            </div>
 
             </div>
-            </div>
+
+
+
+
+
+
 
 
         </>
