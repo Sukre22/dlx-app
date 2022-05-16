@@ -42,7 +42,7 @@ export default function AppMenuPages1() {
                         <div class="files_wrap">
                             <div class="files_wrap-icon"><a href="#"><CloudDownloadIcon/></a></div>
 
-                            <a href="#" className="zip">05-maket.zip</a>
+                            <a href="#" className="zip">Урок-1.zip</a>
                         </div>
 
                 </div>
@@ -51,10 +51,10 @@ export default function AppMenuPages1() {
                     <h3>Задание</h3>
                     <ul className="task-text">
 
-                                <li>1) Обратите внимание, чтобы можно было подставить картинки любых размеров и они не
-                                    ломали вашу верстку
+                                <li> 
+                                    Повторить работу на уроке.
                                 </li>
-                                <li>2) Загрузить папку с проектом на свой хостинг</li>
+                                <li>Сделать самостоятельно по новому плану.</li>
 
                     </ul>
 

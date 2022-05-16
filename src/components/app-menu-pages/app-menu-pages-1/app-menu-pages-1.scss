@@ -20,10 +20,12 @@
   display: flex;
   flex-direction: row;
   padding-left: 10px;
+  
 }
 
 .files_wrap-icon {
   padding-right: 10px;
+  text-decoration: none;
 }
 
 .task {
@@ -33,6 +35,10 @@
 
 .task-text {
   padding-left: 30px;
+}
+
+.zip {
+  text-decoration: none;
 }
 
 
