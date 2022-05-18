@@ -42,7 +42,7 @@ export default function AppMenuPages1() {
                         <div class="files_wrap">
                             <div class="files_wrap-icon"><a href="#"><CloudDownloadIcon/></a></div>
 
-                            <a href="#" className="zip">Урок-1.zip</a>
+                            <p className="zip">Урок-1.zip</p>
                         </div>
 
                 </div>

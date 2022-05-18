@@ -24,8 +24,11 @@
 }
 
 .files_wrap-icon {
+  display: flex;
+  align-items: center;
   padding-right: 10px;
   text-decoration: none;
+  padding-top: 4px;
 }
 
 .task {

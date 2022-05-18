@@ -1,4 +1,4 @@
-.menu-top {
+.app__menu-top {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -7,34 +7,26 @@
   height: 50px;
   border-bottom: 1px solid #e5e5e5;
   z-index: 1;
+  &_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    &-burger {
+      margin-top: 5px;
+    }
+    &-description {
+      display: flex;
+      flex-direction: row;  
+      align-items: center;
+      margin-left: 20px;
+    }
+  }
+  &_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+  }
 }
 
-.icon1 {
-  height: 50px;
-  width: 50px;
-}
-
-.menu-top_icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 15px;
-}
-
-.menu-top_icons2 {
-  display: flex;
-  flex-direction: row;  
-  align-items: center;
-  margin-left: 20px;
-}
-
-.menu-top_icons3 {
-  margin-top: 5px;
-}
-
-.menu-top_icons1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 20px;
-}

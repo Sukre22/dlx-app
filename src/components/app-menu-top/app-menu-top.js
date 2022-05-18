@@ -38,19 +38,18 @@ export default function AppMenuTop() {
 
 
         return(
-          <div class="menu-top">
-              <div class="menu-top_icons">
-
-                  <div class="menu-top_icons3">
+          <div class="app__menu-top">
+              <div class="app__menu-top_right">
+                  <div class="app__menu-top_right-burger">
                       <MenuIcon />
                   </div>
-                  <div class="menu-top_icons2">
+                  <div class="app__menu-top_right-description">
                       <EmojiObjectsIcon fontSize="large" />
                       <div>Обучающий курс по Dialux Evo/Dialux 4.13</div>
                   </div>
 
               </div>
-              <div class="menu-top_icons1">
+              <div class="app__menu-top_left">
                   <Stack direction="row" spacing={1}>
                       <Chip label="Dialux Evo" onClick={handleClick} />
                       <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick} />
