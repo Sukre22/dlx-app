@@ -14,7 +14,7 @@ export default class App extends Component {
            <>
                <AppMenuTop/>
                <AppMenu/>
-               {/* <AppMenuPages2/>*/}
+               {/*<AppMenuPages2/>*/}
                <AppMenuPages1/>
 
            </>

@@ -14,43 +14,42 @@ export default function AppMenuPages1() {
     return(
 
         <>
-            <div class="header">
+            <div class="app__page-header">
 
-            <div class="header-top">
-                <div class="header-top_row">
-                    <div class="text-left">
+            <div class="app__page-header_top">
+                <div class="app__page-header_top-container">
+                    <div class="app__page-header_top-container-left">
                         <ChevronLeftIcon fontSize="large"/>
                     </div>
-                    <div class="header-title">
+                    <div class="app__page-header_top-container-title">
                         <h2 class='work'>1 Введение</h2>
                     </div>
-                    <div class="text-right">
+                    <div class="app__page-header_top-container-right">
                         <ChevronRightIcon  fontSize="large"/>
                     </div>
 
 
                 </div>
-                <div className="header-title_wrapper-video">
+                <div className="app__page-title_video">
                     <div class="video">
                         <video width="1140" controls="controls">
                             {/*<source src="../video/05.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>*/}
                         </video>
                     </div>
                 </div>
-                <div class="files">
+                <div class="app__page-title_files">
                         <h3>Файлы</h3>
-                        <div class="files_wrap">
-                            <div class="files_wrap-icon"><a href="#"><CloudDownloadIcon/></a></div>
+                        <div class="app__page-title_files-wrap">
+                            <div class="app__page-title_files-wrap-icon"><a href="#"><CloudDownloadIcon/></a></div>
 
-                            <p className="zip">Урок-1.zip</p>
+                            <p className="app__page-title_files-wrap-zip">Урок-1.zip</p>
                         </div>
 
                 </div>
 
-                <div class="task">
+                <div class="app__page-title_files-task">
                     <h3>Задание</h3>
-                    <ul className="task-text">
-
+                    <ul className="app__page-title_files-text">
                                 <li> 
                                     Повторить работу на уроке.
                                 </li>
