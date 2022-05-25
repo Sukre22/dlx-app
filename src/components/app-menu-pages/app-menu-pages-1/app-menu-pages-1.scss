@@ -20,6 +20,9 @@
       padding-right: 10px;
       text-decoration: none;
       padding-top: 4px;
+      &-a:hover {
+        background: none;
+      }
     }
     &-zip {
       text-decoration: none;
@@ -37,5 +40,6 @@
 .video {
   margin-top: 30px;
 }
+
 
 

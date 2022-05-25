@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app-menu.scss';
+import {NavLink, Link} from 'react-router-dom';
 
 
 export default class AppMenu extends Component {
@@ -10,8 +11,15 @@ export default class AppMenu extends Component {
 			
             <div class="app__menu">
 			<ul class="app__menu-list">
-			   <li class="app__menu-list-head end">1 Введение</li>
-			   <li class="app__menu-list-head end">2 Основные понятия и определения</li>
+			   <li class="app__menu-list-head end"><NavLink
+				   end
+				   style={({ isActive }) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'})}
+				   to="/">1 Введение</NavLink></li>
+
+				<li className="app__menu-list-head end"><NavLink
+					end
+					style={({isActive}) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'})}
+					to="/firstpage">2 Основные понятия и определения</NavLink></li>
 			   <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li>
 			   <li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>
 			   <li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>

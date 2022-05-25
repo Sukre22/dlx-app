@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import AppMenu from '../app-menu/app-menu.js';
 import AppMenuTop from '../app-menu-top/app-menu-top.js';
@@ -12,10 +13,15 @@ export default class App extends Component {
 
        return(
            <>
-               <AppMenuTop/>
-               <AppMenu/>
-               {/*<AppMenuPages2/>*/}
-               <AppMenuPages1/>
+               <Router>
+                   <AppMenuTop/>
+                   <AppMenu/>
+                   <Routes>
+                       <Route path='/' element={<AppMenuPages1/>}/>
+                       <Route path="/firstpage" element={<AppMenuPages2/>}/>
+                   </Routes>
+
+               </Router>
 
            </>
 
