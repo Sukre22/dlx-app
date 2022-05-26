@@ -7,19 +7,29 @@ export default class AppMenu extends Component {
 
 
     render() {
+
+		const setActive = ({ isActive }) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'});
+
         return(
 			
             <div class="app__menu">
 			<ul class="app__menu-list">
-			   <li class="app__menu-list-head end"><NavLink
+			   <li><NavLink
+			       className={"app__menu-list-head end"}
 				   end
-				   style={({ isActive }) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'})}
-				   to="/">1 Введение</NavLink></li>
+				   style={setActive}
+				   to="/">1 Введение</NavLink>
+			   </li>
 
-				<li className="app__menu-list-head end"><NavLink
+			  <li><NavLink
+				    className={"app__menu-list-head end"}
 					end
-					style={({isActive}) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'})}
-					to="/firstpage">2 Основные понятия и определения</NavLink></li>
+					style={setActive}
+					to="/firstpage">2 Основные понятия и определения</NavLink>
+			  </li>
+
+			  
+
 			   <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li>
 			   <li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>
 			   <li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>
