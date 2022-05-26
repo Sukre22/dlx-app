@@ -9,9 +9,31 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 export default function AppMenuPages1() {
 
 
+    const dataList = [
+
+        {
+            id: 3,
+            name: '3 Знакомство с интерфейсом программы',
+            files: 'Урок-3.zip',
+            taskFirst: 'Первое задание',
+            taskSecond: 'Второе задание'
+        },
+
+        {
+            id: 4.1,
+            name: '4.1 Импорт чертежей различных форматов',
+            files: 'Урок-4.1.zip',
+            taskFirst: 'Третье задание',
+            taskSecond: 'Четвертое задание'
+        }
+
+    ];
+
+
 
 
     return(
+
 
         <>
             <div class="app__page-header">
