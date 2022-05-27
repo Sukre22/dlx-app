@@ -11,12 +11,13 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 
-export default function AppMenuTop() {
+export default class AppMenuTop extends Component {
+
+  /* const {onBurger, burger} = this.props;
+    console.log(burger);*/
 
 
-
-
-       const handleClick = () => {
+   /*    const handleClick = () => {
             console.info('You clicked the Chip.');
         };
 
@@ -36,6 +37,16 @@ export default function AppMenuTop() {
     };
 
 
+    const burgerClick = () => {
+        console.info('You clicked the Chip.');
+    };*/
+
+    render() {
+
+    const {onBurgerChange, onMenuOff} = this.props;
+    
+
+
 
 
         return(
@@ -51,7 +62,7 @@ export default function AppMenuTop() {
                          aria-label="menu"
                          sx={{ mr: 2 }}
                          >
-                         <MenuIcon />
+                         <MenuIcon onClick={onBurgerChange} />
                      </IconButton>
                   </div>
                   <div class="app__menu-top_right-description">
@@ -62,8 +73,8 @@ export default function AppMenuTop() {
               </div>
               <div class="app__menu-top_left">
                   <Stack direction="row" spacing={1}>
-                      <Chip label="Dialux Evo" onClick={handleClick} />
-                      <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick} />
+                      <Chip label="Dialux Evo" /*onClick={handleClick}*/ />
+                      <Chip label="Dialux 4.13" variant="outlined" /*onClick={handleClick}*/ />
                   </Stack>
                   <IconButton
                       
@@ -71,14 +82,14 @@ export default function AppMenuTop() {
                       aria-label="account of current user"
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
-                      onClick={handleMenu}
+                      /*onClick={handleMenu}*/
                       color="inherit"
                   >
                       <AccountCircle />
                   </IconButton>
                   <Menu
                       id="menu-appbar"
-                      anchorEl={anchorEl}
+                      /*anchorEl={anchorEl}*/
                       anchorOrigin={{
                           vertical: 'top',
                           horizontal: 'right',
@@ -88,11 +99,11 @@ export default function AppMenuTop() {
                           vertical: 'top',
                           horizontal: 'right',
                       }}
-                      open={Boolean(anchorEl)}
-                      onClose={handleClose}
+                      /*open={Boolean(anchorEl)}/*
+                     /* onClose={handleClose}*/
                   >
 
-                      <MenuItem onClick={handleClose}>Выход</MenuItem>
+                      <MenuItem /*onClick={handleClose}*/>Выход</MenuItem>
                   </Menu>
               </div>
 
@@ -101,5 +112,5 @@ export default function AppMenuTop() {
         )
 
 
-
+    }
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './app-menu.scss';
 import {NavLink, Link} from 'react-router-dom';
+import { red } from '@mui/material/colors';
 
 
 export default class AppMenu extends Component {
@@ -8,11 +9,20 @@ export default class AppMenu extends Component {
 
     render() {
 
+		const {onMenuOff} = this.props;
+
 		const setActive = ({ isActive }) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'});
+
+	let classNames = 'visible';
+    if (onMenuOff === true) {
+        classNames = 'hidden';
+    }
 
         return(
 			
-            <div class="app__menu">
+            <div class="app__menu"
+			style={{visibility: classNames}}
+			>
 			<ul class="app__menu-list">
 			   <li><NavLink
 			       className={"app__menu-list-head end"}

@@ -9,13 +9,35 @@ import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.j
 
 export default class App extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {            
+            burger: false           
+        };
+        
+        this.onBurger = this.onBurger.bind(this);        
+    }
+
+    onBurger(e) {
+        this.setState(({burger}) => ({
+            burger: !burger
+           
+        }))
+        console.log(this.state.burger);
+    }
+
    render() {
 
        return(
            <>
                <Router>
-                   <AppMenuTop/>
-                   <AppMenu/>
+                   <AppMenuTop
+                   onMenuOff={this.state.burger}
+                   onBurgerChange={this.onBurger}  
+                   />
+                   <AppMenu
+                   onMenuOff={this.state.burger}                 
+                   />
                    <Routes>
                        <Route path='/' element={<AppMenuPages1/>}/>
                        <Route path="/firstpage" element={<AppMenuPages2/>}/>
