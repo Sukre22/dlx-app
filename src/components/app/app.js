@@ -40,7 +40,9 @@ export default class App extends Component {
                    />
                    <Routes>
                        <Route path='/' element={<AppMenuPages1/>}/>
-                       <Route path="/firstpage" element={<AppMenuPages2/>}/>
+                       <Route path="/firstpage" element={<AppMenuPages2
+                           onMenuOff={this.state.burger}
+                       />}/>
                    </Routes>
 
                </Router>
