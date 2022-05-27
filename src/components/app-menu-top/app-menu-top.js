@@ -10,6 +10,7 @@ import Menu from '@mui/material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
+
 export default function AppMenuTop() {
 
 
@@ -41,7 +42,17 @@ export default function AppMenuTop() {
           <div class="app__menu-top">
               <div class="app__menu-top_right">
                   <div class="app__menu-top_right-burger">
-                      <MenuIcon />
+                      {/*<MenuIcon className={'app__menu-top_right-burger-icon'} />*/}
+                      <IconButton
+                         className={'app__menu-top_right-burger-icon'}
+                         size="large"
+                         edge="start"
+                         color="inherit"
+                         aria-label="menu"
+                         sx={{ mr: 2 }}
+                         >
+                         <MenuIcon />
+                     </IconButton>
                   </div>
                   <div class="app__menu-top_right-description">
                       <EmojiObjectsIcon fontSize="large" />

@@ -14,12 +14,16 @@
     margin-left: 15px;
     &-burger {
       margin-top: 5px;
+      &-icon {
+        margin-right: 0px;
+       
+      }           
     }
     &-description {
       display: flex;
       flex-direction: row;  
       align-items: center;
-      margin-left: 20px;
+      margin-left: 0px;
     }
   }
   &_left {
@@ -29,4 +33,6 @@
     margin-right: 20px;
   }
 }
+
+
 
