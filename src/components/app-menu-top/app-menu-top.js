@@ -61,8 +61,9 @@ export default class AppMenuTop extends Component {
                          color="inherit"
                          aria-label="menu"
                          sx={{ mr: 2 }}
+                         onClick={onBurgerChange}
                          >
-                         <MenuIcon onClick={onBurgerChange} />
+                         <MenuIcon  />
                      </IconButton>
                   </div>
                   <div class="app__menu-top_right-description">
