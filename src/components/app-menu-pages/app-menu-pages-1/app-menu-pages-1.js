@@ -6,7 +6,11 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 
 
-export default function AppMenuPages1() {
+
+export default class AppMenuPages1 extends Component {
+
+    render() {
+
 
 
     const dataList = [
@@ -29,6 +33,14 @@ export default function AppMenuPages1() {
 
     ];
 
+        const {onMenuOff} = this.props;
+
+
+        let className = "app__page-header";
+        if (onMenuOff === true) {
+            className += " body__active";
+        }
+
 
 
 
@@ -36,9 +48,11 @@ export default function AppMenuPages1() {
 
 
         <>
-            <div class="app__page-header">
+            <div class={className}>
 
             <div class="app__page-header_top">
+
+
                 <div class="app__page-header_top-container">
                     <div class="app__page-header_top-container-left">
                         <ChevronLeftIcon fontSize="large"/>
@@ -97,4 +111,5 @@ export default function AppMenuPages1() {
 
     )
 
+}
 }

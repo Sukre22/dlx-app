@@ -21,16 +21,16 @@ export default class AppMenuPages2 extends Component {
 
 		const {onMenuOff} = this.props;
 
-		let className = 250;
+		let className = "app__page-header";
 		if (onMenuOff === true) {
-			className = 10;
+			className += " body__active";
 		}
 
 		return (
 
 			<>
-				<div class="app__page-header"
-					 style={{paddingLeft: className}}
+				<div class={className}
+					 //style={{paddingLeft: className}}
 				>
 
 					<div class="app__page-header_top">
