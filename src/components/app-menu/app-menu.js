@@ -28,20 +28,34 @@ export default class AppMenu extends Component {
 			       className={"app__menu-list-head end"}
 				   end
 				   style={setActive}
-				   to="/">1 Введение</NavLink>
+				   to='/dlxevo/introduction'>1 Введение</NavLink>
 			   </li>
 
 			  <li><NavLink
 				    className={"app__menu-list-head end"}
 					end
 					style={setActive}
-					to="/firstpage">2 Основные понятия и определения</NavLink>
+					to="/dlxevo/guide">2 Основные понятия и определения</NavLink>
 			  </li>
 
-			  
+				<li><NavLink
+					className={"app__menu-list-head end"}
+					end
+					style={setActive}
+					to="/dlxevo/3">3 Знакомство с интерфейсом программы</NavLink>
+				</li>
 
-			   <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li>
-			   <li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>
+				<li><NavLink
+					className={"app__menu-list-head end"}
+					end
+					style={setActive}
+					to="/dlxevo/4">4 Моделирование освещаемого объекта</NavLink>
+				</li>
+
+
+
+				{/* <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li> */}
+				{/*<li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>*/}
 			   <li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>
 			   <li class="app__menu-list-part">4.2 Построение зданий и его помещений</li>
 			   <li class="app__menu-list-part">4.3 Добавление дверей, окон, потолков и крыши</li>

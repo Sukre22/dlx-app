@@ -39,10 +39,10 @@ export default class App extends Component {
                    onMenuOff={this.state.burger}                 
                    />
                    <Routes>
-                       <Route path='/' element={<AppMenuPages1
+                       <Route path='/dlxevo/introduction' element={<AppMenuPages1
                            onMenuOff={this.state.burger}
                        />}/>
-                       <Route path="/firstpage" element={<AppMenuPages2
+                       <Route path="/dlxevo/guide" element={<AppMenuPages2
                            onMenuOff={this.state.burger}
                        />}/>
                    </Routes>

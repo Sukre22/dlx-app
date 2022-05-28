@@ -29,9 +29,9 @@ export default class AppMenuPages2 extends Component {
 		return (
 
 			<>
-				<div class={className}
-					 //style={{paddingLeft: className}}
-				>
+				<div class={className}>
+
+
 
 					<div class="app__page-header_top">
 						<div class="app__page-header_top-container">
