@@ -6,6 +6,7 @@ import AppMenu from '../app-menu/app-menu.js';
 import AppMenuTop from '../app-menu-top/app-menu-top.js';
 import AppMenuPages2 from '../app-menu-pages/app-menu-pages-2/app-menu-pages-2.js';
 import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.js';
+import AppHome from '../app-home/app-home.js';
 
 export default class App extends Component {
 
@@ -39,6 +40,8 @@ export default class App extends Component {
                    onMenuOff={this.state.burger}                 
                    />
                    <Routes>
+
+
                        <Route path='/dlxevo/introduction' element={<AppMenuPages1
                            onMenuOff={this.state.burger}
                        />}/>
