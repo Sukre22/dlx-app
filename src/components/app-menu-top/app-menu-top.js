@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import './app-menu-top.scss';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -11,13 +11,13 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 
-export default class AppMenuTop extends Component {
-
-  /* const {onBurger, burger} = this.props;
-    console.log(burger);*/
+const AppMenuTop = ({onBurgerChange}) => {
 
 
-   /*    const handleClick = () => {
+
+
+
+       const handleClick = () => {
             console.info('You clicked the Chip.');
         };
 
@@ -39,12 +39,10 @@ export default class AppMenuTop extends Component {
 
     const burgerClick = () => {
         console.info('You clicked the Chip.');
-    };*/
+    };
 
-    render() {
 
-    const {onBurgerChange, onMenuOff} = this.props;
-    
+
 
 
 
@@ -74,8 +72,8 @@ export default class AppMenuTop extends Component {
               </div>
               <div class="app__menu-top_left">
                   <Stack direction="row" spacing={1}>
-                      <Chip label="Dialux Evo" /*onClick={handleClick}*/ />
-                      <Chip label="Dialux 4.13" variant="outlined" /*onClick={handleClick}*/ />
+                      <Chip label="Dialux Evo" onClick={handleClick} />
+                      <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick} />
                   </Stack>
                   <IconButton
                       
@@ -83,14 +81,14 @@ export default class AppMenuTop extends Component {
                       aria-label="account of current user"
                       aria-controls="menu-appbar"
                       aria-haspopup="true"
-                      /*onClick={handleMenu}*/
+                      onClick={handleMenu}
                       color="inherit"
                   >
                       <AccountCircle />
                   </IconButton>
                   <Menu
                       id="menu-appbar"
-                      /*anchorEl={anchorEl}*/
+                      anchorEl={anchorEl}
                       anchorOrigin={{
                           vertical: 'top',
                           horizontal: 'right',
@@ -100,11 +98,11 @@ export default class AppMenuTop extends Component {
                           vertical: 'top',
                           horizontal: 'right',
                       }}
-                      /*open={Boolean(anchorEl)}/*
-                     /* onClose={handleClose}*/
+                      open={Boolean(anchorEl)}
+                      onClose={handleClose}
                   >
 
-                      <MenuItem /*onClick={handleClose}*/>Выход</MenuItem>
+                      <MenuItem onClick={handleClose}>Выход</MenuItem>
                   </Menu>
               </div>
 
@@ -113,5 +111,7 @@ export default class AppMenuTop extends Component {
         )
 
 
-    }
+  /*  }*/
 }
+
+export default AppMenuTop;
