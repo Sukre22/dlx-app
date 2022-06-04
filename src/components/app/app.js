@@ -7,6 +7,7 @@ import AppMenuTop from '../app-menu-top/app-menu-top.js';
 import AppMenuPages2 from '../app-menu-pages/app-menu-pages-2/app-menu-pages-2.js';
 import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.js';
 import AppHome from '../app-home/app-home.js';
+import AppEntry from "../app-entry/app-entry";
 
 
 
@@ -23,7 +24,11 @@ const App = (props) => {
     return(
         <>
             <Router>
-                <AppMenuTop
+
+
+                <AppEntry/>
+
+                {/*  <AppMenuTop
                     onMenuOff={burger}
                     onBurgerChange={onBurger}
                 />
@@ -39,7 +44,8 @@ const App = (props) => {
                     <Route path="/dlxevo/guide" element={<AppMenuPages2
                         onMenuOff={burger}
                     />}/>
-                </Routes>
+
+                </Routes>*/}
 
             </Router>
 
