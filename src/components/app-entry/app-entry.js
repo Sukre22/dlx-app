@@ -14,7 +14,7 @@ const AppEntry = (props) => {
         <div class="form__body">
         <div className="form__container">
             <form action="#" method="POST">
-                <h1 className="form__container-title">Вход</h1>
+                <h1 className="form__container-title">Авторизация</h1>
                 <div className="form__container-wrap">
                     <div className="form__container-group">
                         <label className="form__container-group-label" htmlFor="email">* Email</label>

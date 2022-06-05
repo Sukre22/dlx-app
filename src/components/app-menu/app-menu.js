@@ -13,15 +13,15 @@ export default class AppMenu extends Component {
 
 		const setActive = ({ isActive }) => ({backgroundColor: isActive ? '#e5e5e5' : 'inherit'});
 
-	let classNames = 'visible';
+	let classNames = 'block';
     if (onMenuOff === true) {
-        classNames = 'hidden';
+        classNames = 'none';
     }
 
         return(
 			
             <div class="app__menu"
-			style={{visibility: classNames}}
+			style={{display: classNames}}
 			>
 			<ul class="app__menu-list">
 			   <li><NavLink

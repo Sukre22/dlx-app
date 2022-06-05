@@ -26,17 +26,32 @@ const App = (props) => {
             <Router>
 
 
-                <AppEntry/>
 
-                {/*  <AppMenuTop
+                <Routes>
+                    <Route path='/' element={<AppHome/>}/>
+                </Routes>
+
+                <Routes>
+                    <Route path='/login' element={<AppEntry/>}/>
+                </Routes>
+
+
+                {/*<AppHome path='/'/>*/}
+
+                {/*<AppEntry path='/login'/>*/}
+
+
+
+                <AppMenuTop
                     onMenuOff={burger}
                     onBurgerChange={onBurger}
                 />
                 <AppMenu
                     onMenuOff={burger}
                 />
-                <Routes>
 
+
+                <Routes>
 
                     <Route path='/dlxevo/introduction' element={<AppMenuPages1
                         onMenuOff={burger}
@@ -45,7 +60,19 @@ const App = (props) => {
                         onMenuOff={burger}
                     />}/>
 
-                </Routes>*/}
+                </Routes>
+                <Routes>
+
+                    <Route path='/dlx413/introduction' element={<AppMenuPages1
+                        onMenuOff={burger}
+                    />}/>
+                    <Route path="/dlx413/guide" element={<AppMenuPages2
+                        onMenuOff={burger}
+                    />}/>
+
+                </Routes>
+
+
 
             </Router>
 
