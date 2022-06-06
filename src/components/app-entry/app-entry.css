@@ -34,7 +34,7 @@
 
 .form__container-group {
     position: relative;
-    margin-top: 0px;
+    margin-top: 13px;
     margin-bottom: 0px;
 
 }
@@ -89,8 +89,8 @@
 .form__container-group-input {
     display: block;
     margin: 0px;
-    margin-bottom: 13px;
-    /*margin-bottom: 0px;*/
+    /*margin-bottom: 13px;*/
+    margin-bottom: 0px;
     padding-left: 15px;
     margin-left: 45px;
     height: 49px;
@@ -112,6 +112,7 @@
 }
 
 .form__container-checkbox {
+    margin-top: 13px;
     margin-left: 45px;
     margin-bottom: 56px;
     font-weight: normal;
