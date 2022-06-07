@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './app-menu.scss';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink, Link, Outlet} from 'react-router-dom';
 import { red } from '@mui/material/colors';
 
 
@@ -19,7 +19,7 @@ export default class AppMenu extends Component {
     }
 
         return(
-			
+			<>
             <div class="app__menu"
 			style={{display: classNames}}
 			>
@@ -83,7 +83,10 @@ export default class AppMenu extends Component {
 					</div>
 					<p class="app__footer-copyright">© 2022 Copyright</p>
 				</footer>
+				
 	 </div>
+	 <Outlet/>
+	 </>
 	 
  
         )

@@ -32,21 +32,22 @@ const App = (props) => {
                     <Route path='/login' element={<AppEntry/>}/>
                 </Routes>
 
-                <AppMenuTop
+               <AppMenuTop
                     onMenuOff={burger}
                     onBurgerChange={onBurger}
-                />
-                <AppMenu
+               />
+                {/* <AppMenu
                     onMenuOff={burger}
-                />
+                />*/}
                 <Routes>
 
-                    <Route path='/dlxevo/introduction' element={<AppMenuPages1
-                        onMenuOff={burger}
-                    />}/>
-                    <Route path="/dlxevo/guide" element={<AppMenuPages2
-                        onMenuOff={burger}
-                    />}/>
+                    <Route path='/dlxevo/introduction' element={ <AppMenu onMenuOff={burger}/>}>
+
+                       <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>          
+                       <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                       
+                        
+                   
+                    </Route>
 
                 </Routes>
                 <Routes>
