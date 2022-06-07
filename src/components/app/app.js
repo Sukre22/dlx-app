@@ -24,9 +24,6 @@ const App = (props) => {
     return(
         <>
             <Router>
-
-
-
                 <Routes>
                     <Route path='/' element={<AppHome/>}/>
                 </Routes>
@@ -35,13 +32,6 @@ const App = (props) => {
                     <Route path='/login' element={<AppEntry/>}/>
                 </Routes>
 
-
-                {/*<AppHome path='/'/>*/}
-
-                {/*<AppEntry path='/login'/>*/}
-
-
-
                 <AppMenuTop
                     onMenuOff={burger}
                     onBurgerChange={onBurger}
@@ -49,8 +39,6 @@ const App = (props) => {
                 <AppMenu
                     onMenuOff={burger}
                 />
-
-
                 <Routes>
 
                     <Route path='/dlxevo/introduction' element={<AppMenuPages1
@@ -71,8 +59,6 @@ const App = (props) => {
                     />}/>
 
                 </Routes>
-
-
 
             </Router>
 
