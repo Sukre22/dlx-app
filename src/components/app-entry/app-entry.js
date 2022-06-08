@@ -33,6 +33,10 @@ const AppEntry = (props) => {
         onSubmit: values => console.log(JSON.stringify(values, null, 2))
     })
 
+
+
+
+
     return(
 
         <div class="form__body">
@@ -46,7 +50,7 @@ const AppEntry = (props) => {
                                placeholder="Введите Email"
                                type="email"
                                name="email"
-                               value={formik.values.name}
+                               value={formik.values.email}
                                onChange={formik.handleChange}
                                onBlur={formik.handleBlur}
                         />

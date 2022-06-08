@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app-home.scss';
+import {Navigate} from 'react-router-dom';
 
 
 
@@ -22,6 +23,9 @@ export default class AppHome extends Component {
 
 
             <>
+
+                <Navigate to="/login" />
+
                 <div class={className}>
 
                     <div class="app__page-header_top">

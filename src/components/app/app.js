@@ -1,6 +1,8 @@
 import React, {Component, useState} from 'react';
 import './app.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {Provider} from "react-redux";
+import {store} from 'store';
 
 import AppMenu from '../app-menu/app-menu.js';
 import AppMenuTop from '../app-menu-top/app-menu-top.js';
@@ -26,7 +28,7 @@ const App = (props) => {
 
 
         <Router>
-
+                <Provider store={store}>
                 <Routes>
                     <Route path='/' element={<AppHome/>}/>
                 </Routes>
@@ -59,7 +61,7 @@ const App = (props) => {
                     </Route>
 
                 </Routes>
-
+                </Provider>
             </Router>
 
         </>
