@@ -28,7 +28,7 @@ export default class AppMenu extends Component {
 			       className={"app__menu-list-head end"}
 				   end
 				   style={setActive}
-				   to='/dlxevo/introduction'>1 Введение</NavLink>
+				   to='/dlxevo'>1 Введение</NavLink>
 			   </li>
 
 			  <li><NavLink

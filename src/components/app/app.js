@@ -23,7 +23,10 @@ const App = (props) => {
 
     return(
         <>
-            <Router>
+
+
+        <Router>
+
                 <Routes>
                     <Route path='/' element={<AppHome/>}/>
                 </Routes>
@@ -32,16 +35,11 @@ const App = (props) => {
                     <Route path='/login' element={<AppEntry/>}/>
                 </Routes>
 
-               <AppMenuTop
-                    onMenuOff={burger}
-                    onBurgerChange={onBurger}
-               />
-                {/* <AppMenu
-                    onMenuOff={burger}
-                />*/}
+                <AppMenuTop onMenuOff={burger} onBurgerChange={onBurger}/>
+
                 <Routes>
 
-                    <Route path='/dlxevo/introduction' element={ <AppMenu onMenuOff={burger}/>}>
+                    <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger}/>}>
 
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>          
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                       
@@ -52,12 +50,13 @@ const App = (props) => {
                 </Routes>
                 <Routes>
 
-                    <Route path='/dlx413/introduction' element={<AppMenuPages1
-                        onMenuOff={burger}
-                    />}/>
-                    <Route path="/dlx413/guide" element={<AppMenuPages2
-                        onMenuOff={burger}
-                    />}/>
+                    <Route path='/dlx413' element={ <AppMenu onMenuOff={burger}/>}>
+
+                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
+                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
+
+
+                    </Route>
 
                 </Routes>
 
