@@ -1,6 +1,10 @@
 import React, {Component, useState} from 'react';
 import './app-entry.css';
 import {useFormik} from 'formik';
+import {useDispatch} from 'react-redux';
+import {setUser} from 'store/slices/userSlice';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {useNavigate} from 'react-router-dom';
 
 
 const validate = values => {
@@ -30,8 +34,34 @@ const AppEntry = (props) => {
             password: ''
         },
         validate,
-        onSubmit: values => console.log(JSON.stringify(values, null, 2))
+        // onSubmit: values => console.log(JSON.stringify(values, null, 2))
+        onSubmit: () => Login.handleLogin(formik.values.email, formik.values.password)
     })
+
+
+    const Login = (email, password) => {
+        const dispatch = useDispatch();
+        const {push} = useNavigate();
+
+
+       const handleLogin = (email, password) => {
+           const auth = getAuth();
+           signInWithEmailAndPassword(auth, email, password)
+               .then(({user}) =>{
+                    dispatch(setUser({
+                        email: user.email,
+                        id: user.uid,
+                        token: user.accessToken,
+                    }));
+                    push('/');
+
+           })
+               .catch(console.error)
+       }
+
+
+
+    }
 
 
 
@@ -41,7 +71,7 @@ const AppEntry = (props) => {
 
         <div class="form__body">
         <div className="form__container">
-            <form action="#" method="POST" onSubmit={formik.handleSubmit}>
+            <form onSubmit={formik.handleSubmit}>
                 <h1 className="form__container-title">Авторизация</h1>
                 <div className="form__container-wrap">
                     <div className="form__container-group">
