@@ -4,7 +4,7 @@ import {useFormik} from 'formik';
 import {useDispatch} from 'react-redux';
 import {setUser} from 'store/slices/userSlice';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const validate = values => {
@@ -28,40 +28,38 @@ const validate = values => {
 
 const AppEntry = (props) => {
 
+    const dispatch = useDispatch();
+    const history = useNavigate();
+
+
+    const handleLogin = (email, password) => {
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+            .then(({user}) =>{
+                dispatch(setUser({
+                    email: user.email,
+                    id: user.uid,
+                    token: user.accessToken,
+                }));
+               history('/');
+
+            })
+            .catch(console.error)
+    }
+
+
+
     const formik = useFormik({
         initialValues: {
             email: '',
             password: ''
         },
         validate,
-        // onSubmit: values => console.log(JSON.stringify(values, null, 2))
-        onSubmit: () => Login.handleLogin(formik.values.email, formik.values.password)
+       // onSubmit: values => console.log(JSON.stringify(values, null, 2))
+        onSubmit: values => handleLogin(values.email, values.password)
     })
 
 
-    const Login = (email, password) => {
-        const dispatch = useDispatch();
-        const {push} = useNavigate();
-
-
-       const handleLogin = (email, password) => {
-           const auth = getAuth();
-           signInWithEmailAndPassword(auth, email, password)
-               .then(({user}) =>{
-                    dispatch(setUser({
-                        email: user.email,
-                        id: user.uid,
-                        token: user.accessToken,
-                    }));
-                    push('/');
-
-           })
-               .catch(console.error)
-       }
-
-
-
-    }
 
 
 
@@ -72,6 +70,7 @@ const AppEntry = (props) => {
         <div class="form__body">
         <div className="form__container">
             <form onSubmit={formik.handleSubmit}>
+
                 <h1 className="form__container-title">Авторизация</h1>
                 <div className="form__container-wrap">
                     <div className="form__container-group">
@@ -117,7 +116,7 @@ const AppEntry = (props) => {
                         <div className="form__container-checkbox-invalid">Поле обязательно для заполнения</div>
                     </div>
                     <div className="form__container-button">
-                        <button className="form__container-button-press">Войти</button>
+                        <button type="submit" className="form__container-button-press">Войти</button>
                     </div>
 
                 </div>

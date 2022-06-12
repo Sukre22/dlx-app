@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import './app-home.scss';
 import {Navigate} from 'react-router-dom';
+import {useAuth} from 'hooks/use-auth';
+import {useDispatch} from "react-redux";
+import {removeUser} from "store/slices/userSlice";
 
 
+const AppHome = ({onMenuOff}) => {
 
-export default class AppHome extends Component {
-
-    render() {
-
-        const {onMenuOff} = this.props;
+    const dispatch = useDispatch();
+    const {isAuth, email} = useAuth();
 
 
         let className = "app__page-header";
@@ -19,14 +20,18 @@ export default class AppHome extends Component {
 
 
 
-        return(
+
+
+        return isAuth ? (
 
 
             <>
 
-                <Navigate to="/login" />
+
 
                 <div class={className}>
+
+
 
                     <div class="app__page-header_top">
 
@@ -67,6 +72,10 @@ export default class AppHome extends Component {
 
                             </ul>
 
+                            <button
+                                onClick={() => dispatch(removeUser())}
+                            >Log out from {email}</button>
+
                         </div>
 
                     </div>
@@ -83,7 +92,11 @@ export default class AppHome extends Component {
             </>
 
 
+        ) : (
+            <Navigate to="/login" />
         )
 
-    }
+
 }
+
+export default AppHome;
