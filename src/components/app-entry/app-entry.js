@@ -44,7 +44,7 @@ const AppEntry = (props) => {
                history('/');
 
             })
-            .catch(console.error)
+            .catch(() => alert("Такого пользователя не существует"))
     }
 
 
