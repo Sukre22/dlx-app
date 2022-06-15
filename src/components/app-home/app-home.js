@@ -40,9 +40,7 @@ const AppHome = ({onMenuOff}) => {
     };
 
 
-    const burgerClick = () => {
-        console.info('You clicked the Chip.');
-    };
+
 
 
 
@@ -108,52 +106,56 @@ const AppHome = ({onMenuOff}) => {
 
 
 
-                <div class={'app__home-header'}>
+                <div class='app__home-header'>
 
-                    <div class="app__page-header_top">
+                    <div class="app__home-header_top">
 
 
-                        <div class="app__page-header_top-container">
+                        <div class="app__home-header_top-container">
 
-                            <div class="app__page-header_top-container-title">
+                            <div class="app__home-header_top-container-title">
                                 <h2 class='work'>Добро пожаловать на курс!</h2>
                             </div>
 
 
 
                         </div>
-                        <div className="app__page-title_video">
-                            <div class="video">
-                                <video width="1140" controls="controls">
-                                    {/*<source src="../video/05.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>*/}
-                                </video>
+                        <div className="app__home-title">
+
+                            <h3 className={'app__home-title-h3'}>Выберите версию Dialux, с которой хотите начать обучение :</h3>
+                            <div class="app__home-title_description">
+                                <ul className="cards">
+                                    <li className="cards__item">
+                                        <div className="card">
+                                            <div className="card__image card__image--fence"></div>
+                                            <div className="card__content">
+                                                <div className="card__title">Dialux Evo</div>
+                                                <p className="card__text">This is the shorthand for flex-grow,
+                                                    flex-shrink and flex-basis combined. The second and third parameters
+                                                    (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                                                <button className="btn btn--block card__btn">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="cards__item">
+                                        <div className="card">
+                                            <div className="card__image card__image--river"></div>
+                                            <div className="card__content">
+                                                <div className="card__title">Dialux 4.13</div>
+                                                <p className="card__text">This defines the ability for a flex item to
+                                                    grow if necessary. It accepts a unitless value that serves as a
+                                                    proportion. It dictates what amount of the available space inside
+                                                    the flex container the item should take up.</p>
+                                                <button className="btn btn--block card__btn">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                        </ul>
+
                             </div>
                         </div>
-                        <div class="app__page-title_files">
-                            <h3>Файлы</h3>
-                            <div class="app__page-title_files-wrap">
 
 
-                                <p className="app__page-title_files-wrap-zip">Урок-1.zip</p>
-                            </div>
-
-                        </div>
-
-                        <div class="app__page-title_files-task">
-                            <h3>Задание</h3>
-                            <ul className="app__page-title_files-text">
-                                <li>
-                                    Повторить работу на уроке.
-                                </li>
-                                <li>Сделать самостоятельно по новому плану.</li>
-
-                            </ul>
-
-                            <button
-                                onClick={() => dispatch(removeUser())}
-                            >Log out from {email}</button>
-
-                        </div>
 
                     </div>
 
