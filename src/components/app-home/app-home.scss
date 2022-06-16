@@ -125,17 +125,13 @@ img {
     padding-top: 66.6%;
   }
 }
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
-}
+
 .card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url(https://sgslight.com/wp-content/uploads/2015/06/DIALux-logo.jpg);
 }
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
-}
+
 .card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url(https://cdn.elec.ru/i/83/65/8365ba5c326ae3e239d08586156b03d46f942b49.jpg);
 }
 .card__title {
   color: #696969;
@@ -151,10 +147,13 @@ img {
   margin-bottom: 1.25rem;
 }
 
-/*.first_item {
-  margin-left: 60px;
+.first_item {
+ width: 43%;
+ //height: 550px;
 }
 
 .second_item {
-  margin-right: 60px;
-}*/
+  width: 43%;
+  //height: 550px;
+ 
+}
