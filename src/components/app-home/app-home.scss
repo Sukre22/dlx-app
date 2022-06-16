@@ -148,12 +148,24 @@ img {
 }
 
 .first_item {
- width: 43%;
+ width: 46%;
  //height: 550px;
 }
 
 .second_item {
-  width: 43%;
+  width: 46%;
   //height: 550px;
  
+}
+
+.card__text-p {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #ebebeb;
 }

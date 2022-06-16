@@ -130,9 +130,12 @@ const AppHome = ({onMenuOff}) => {
                                             <div className="card__image card__image--fence"></div>
                                             <div className="card__content">
                                                 <div className="card__title">Dialux Evo</div>
-                                                <p className="card__text">This is the shorthand for flex-grow,
-                                                    flex-shrink and flex-basis combined. The second and third parameters
-                                                    (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                                                <p className="card__text">Dialux Evo это обновленная версия программы, 
+                                                отличается гибкими настройками и современным интерфейсом.
+                                                Преимущество новой версии DIALux evo – это более эффективная работа с графическими элементами,
+                                                 возможность осуществлять более детально дизайн-проекты. 
+                                                 </p>
+                                                 <p className="card__text-p">Преподаватель: Исаев Раиль</p>
                                                 <button className="btn btn--block card__btn">Выбрать</button>
                                             </div>
                                         </div>
@@ -142,10 +145,10 @@ const AppHome = ({onMenuOff}) => {
                                             <div className="card__image card__image--river"></div>
                                             <div className="card__content">
                                                 <div className="card__title">Dialux 4.13</div>
-                                                <p className="card__text">This defines the ability for a flex item to
-                                                    grow if necessary. It accepts a unitless value that serves as a
-                                                    proportion. It dictates what amount of the available space inside
-                                                    the flex container the item should take up.</p>
+                                                <p className="card__text">Dialux 4.13 на данный момент перестала поддерживаться и обновляться,
+                                                однако в нем есть функционал, который позволяет делать спортивное освещение намного быстрее
+                                                и удобнее чем в Dialux Evo, также сами разработчики рекомендуют делать спортивное освещение именно на этой версии.</p>
+                                                <p className="card__text-p">Преподаватель: Милова Татьяна</p>
                                                 <button className="btn btn--block card__btn">Выбрать</button>
                                             </div>
                                         </div>
