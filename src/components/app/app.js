@@ -37,7 +37,7 @@ const App = (props) => {
                     <Route path='/login' element={<AppEntry/>}/>
                 </Routes>
 
-                <AppMenuTop onMenuOff={burger} onBurgerChange={onBurger}/>
+                {/*<AppMenuTop onMenuOff={burger} onBurgerChange={onBurger}/>*/}
 
                 <Routes>
 

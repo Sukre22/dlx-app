@@ -122,10 +122,10 @@ const AppHome = ({onMenuOff}) => {
                         </div>
                         <div className="app__home-title">
 
-                            <h3 className={'app__home-title-h3'}>Выберите версию Dialux, с которой хотите начать обучение :</h3>
+                            <h3 className='app__home-title-h3'>Выберите версию Dialux, с которой хотите начать обучение :</h3>
                             <div class="app__home-title_description">
                                 <ul className="cards">
-                                    <li className="cards__item">
+                                    <li className="cards__item first_item">
                                         <div className="card">
                                             <div className="card__image card__image--fence"></div>
                                             <div className="card__content">
@@ -137,7 +137,7 @@ const AppHome = ({onMenuOff}) => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="cards__item">
+                                    <li className="cards__item second_item">
                                         <div className="card">
                                             <div className="card__image card__image--river"></div>
                                             <div className="card__content">
