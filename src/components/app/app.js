@@ -2,7 +2,8 @@ import React, {Component, useState} from 'react';
 import './app.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Provider} from "react-redux";
-import {store} from 'store';
+import {store, persistor} from 'store';
+import {PersistGate} from 'redux-persist/integration/react';
 
 import AppMenu from '../app-menu/app-menu.js';
 import AppMenuTop from '../app-menu-top/app-menu-top.js';
@@ -15,6 +16,9 @@ import AppEntry from "../app-entry/app-entry";
 
 const App = (props) => {
 
+
+
+
     const [burger, setBurger] = useState(false);
 
     function onBurger(i) {
@@ -26,8 +30,9 @@ const App = (props) => {
     return(
         <>
         <Router>
-                <Provider store={store}>      
-                <Routes>
+                <Provider store={store}>
+                 <PersistGate loading={null} persistor={persistor}>
+                  <Routes>
                     <Route path='/' element={<AppHome/>}/>
                     <Route path='/login' element={<AppEntry/>}/>
                     <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger} onBurgerChange={onBurger}/>}>
@@ -38,7 +43,8 @@ const App = (props) => {
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                         <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
                     </Route>                              
-                </Routes>                      
+                  </Routes>
+                 </PersistGate>
                 </Provider>
         </Router>
         </>
