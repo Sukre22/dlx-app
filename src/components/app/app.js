@@ -25,52 +25,36 @@ const App = (props) => {
 
     return(
         <>
-
-
         <Router>
-                <Provider store={store}>
+                <Provider store={store}>      
                 <Routes>
                     <Route path='/' element={<AppHome/>}/>
-                </Routes>
-
-                <Routes>
                     <Route path='/login' element={<AppEntry/>}/>
-                </Routes>
-
-                {/*<AppMenuTop onMenuOff={burger} onBurgerChange={onBurger}/>*/}
-
-                <Routes>
-
-                    <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger}
-                                                             onBurgerChange={onBurger}
-                    />}>
-
+                    <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger} onBurgerChange={onBurger}/>}>
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
-                       <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                       
-                        
-                   
-                    </Route>
-
-                </Routes>
-                <Routes>
-
+                       <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
+                    </Route> 
                     <Route path='/dlx413' element={ <AppMenu onMenuOff={burger}/>}>
-
-
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                         <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
-
-
-                    </Route>
-
-                </Routes>
+                    </Route>                              
+                </Routes>                      
                 </Provider>
-            </Router>
-
+        </Router>
         </>
 
     )
 
 }
 
-export default App;
+export default App;                           
+                             
+                
+
+               
+                
+
+                   
+
+                
+                

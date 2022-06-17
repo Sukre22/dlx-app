@@ -102,10 +102,6 @@ const AppHome = ({onMenuOff}) => {
 
 
 
-
-
-
-
                 <div class='app__home-header'>
 
                     <div class="app__home-header_top">

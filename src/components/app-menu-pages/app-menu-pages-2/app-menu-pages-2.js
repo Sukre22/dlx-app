@@ -1,6 +1,7 @@
 import { dividerClasses } from '@mui/material';
 import React, {Component} from 'react';
 import './app-menu-pages-2.scss';
+import {useDispatch} from "react-redux";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Wavelength from './img/wavelength.jpg';
@@ -12,14 +13,16 @@ import CRI from './img/cri.jpg';
 import IP from './img/IP.jpg';
 
 
-export default class AppMenuPages2 extends Component {
+const AppMenuPages2 = ({onMenuOff}) => {
 
 
 
 
-	render() {
+	
 
-		const {onMenuOff} = this.props;
+		const dispatch = useDispatch();
+
+		
 
 		let className = "app__page-header";
 		if (onMenuOff === true) {
@@ -202,6 +205,8 @@ export default class AppMenuPages2 extends Component {
 		)
 
 
-	}
+	
 
 }
+
+export default AppMenuPages2;
