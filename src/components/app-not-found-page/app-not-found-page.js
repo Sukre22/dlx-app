@@ -103,7 +103,7 @@ const AppNotfoundpage = ({onMenuOff}) => {
                     <div class="app__home-header_top-container">
 
                         <div class="app__home-header_top-container-title">
-                            <h1 class='work'>Ошибка 404. Вы попали на страницу, которой не существет!</h1>
+                            <h1 class='work'>Ошибка 404. Вы попали на страницу, которой не существует!</h1>
                         </div>
 
 

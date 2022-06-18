@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './app-home.scss';
-import {Navigate} from 'react-router-dom';
+import {Navigate, NavLink} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -22,6 +22,8 @@ const AppHome = ({onMenuOff}) => {
 
     const handleClick = () => {
         console.info('You clicked the Chip.');
+
+
     };
 
     const [auth, setAuth] = React.useState(true);
@@ -40,13 +42,6 @@ const AppHome = ({onMenuOff}) => {
     };
 
 
-
-
-
-
-
-
-
         return isAuth ? (
 
 
@@ -63,8 +58,8 @@ const AppHome = ({onMenuOff}) => {
                     </div>
                     <div className="app__menu-top_left">
                         <Stack direction="row" spacing={1}>
-                            <Chip label="Dialux Evo" onClick={handleClick}/>
-                            <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick}/>
+                            <Chip label="Dialux Evo" /*variant="outlined"*/ onClick={handleClick}/>
+                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={handleClick}/>
                         </Stack>
                         <IconButton
 
@@ -132,7 +127,8 @@ const AppHome = ({onMenuOff}) => {
                                                  возможность осуществлять более детально дизайн-проекты. 
                                                  </p>
                                                  <p className="card__text-p">Преподаватель: Исаев Раиль</p>
-                                                <button className="btn btn--block card__btn">Выбрать</button>
+                                                {/* <button className="btn btn--block card__btn">Выбрать</button>*/}
+                                                <Chip label="Выбрать" variant="outlined" onClick={handleClick}/>
                                             </div>
                                         </div>
                                     </li>
@@ -145,7 +141,8 @@ const AppHome = ({onMenuOff}) => {
                                                 однако в нем есть функционал, который позволяет делать спортивное освещение намного быстрее
                                                 и удобнее чем в Dialux Evo, также сами разработчики рекомендуют делать спортивное освещение именно на этой версии.</p>
                                                 <p className="card__text-p">Преподаватель: Милова Татьяна</p>
-                                                <button className="btn btn--block card__btn">Выбрать</button>
+                                                {/*<button className="btn btn--block card__btn">Выбрать</button>*/}
+                                                <Chip label="Выбрать" variant="outlined" onClick={handleClick}/>
                                             </div>
                                         </div>
                                     </li>
