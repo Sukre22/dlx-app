@@ -11,6 +11,7 @@ import AppMenuPages2 from '../app-menu-pages/app-menu-pages-2/app-menu-pages-2.j
 import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.js';
 import AppHome from '../app-home/app-home.js';
 import AppEntry from "../app-entry/app-entry";
+import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
 
 
 
@@ -42,7 +43,8 @@ const App = (props) => {
                     <Route path='/dlx413' element={ <AppMenu onMenuOff={burger}/>}>
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                         <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
-                    </Route>                              
+                    </Route>
+                      <Route path='*' element={<AppNotfoundpage/>}/>
                   </Routes>
                  </PersistGate>
                 </Provider>
