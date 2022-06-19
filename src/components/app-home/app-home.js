@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './app-home.scss';
-import {Navigate, NavLink} from 'react-router-dom';
+import {useNavigate, NavLink, Navigate} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -18,6 +18,13 @@ const AppHome = ({onMenuOff}) => {
 
     const dispatch = useDispatch();
     const {isAuth, email} = useAuth();
+
+
+    let navigate = useNavigate();
+    const routeChange = () =>{
+        let path = `dlxevo`;
+        navigate(path);
+    }
 
 
     const handleClick = () => {
@@ -142,7 +149,7 @@ const AppHome = ({onMenuOff}) => {
                                                 и удобнее чем в Dialux Evo, также сами разработчики рекомендуют делать спортивное освещение именно на этой версии.</p>
                                                 <p className="card__text-p">Преподаватель: Милова Татьяна</p>
                                                 {/*<button className="btn btn--block card__btn">Выбрать</button>*/}
-                                                <Chip label="Выбрать" variant="outlined" onClick={handleClick}/>
+                                                <Chip label="Выбрать" variant="outlined" onClick={routeChange}/>
                                             </div>
                                         </div>
                                     </li>
