@@ -135,7 +135,7 @@ const AppHome = ({onMenuOff}) => {
                                                  </p>
                                                  <p className="card__text-p">Преподаватель: Исаев Раиль</p>
                                                 {/* <button className="btn btn--block card__btn">Выбрать</button>*/}
-                                                <Chip label="Выбрать" variant="outlined" onClick={handleClick}/>
+                                                <Chip label="Выбрать" variant="outlined" onClick={routeChange}/>
                                             </div>
                                         </div>
                                     </li>
