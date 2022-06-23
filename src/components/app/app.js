@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './app.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
 import {Provider} from "react-redux";
 import {store, persistor} from 'store';
 import {PersistGate} from 'redux-persist/integration/react';
@@ -17,7 +17,7 @@ import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
 
 const App = (props) => {
 
-
+    
 
 
     const [burger, setBurger] = useState(false);

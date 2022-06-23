@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './app-home.scss';
-import {useNavigate, NavLink, Navigate} from 'react-router-dom';
+import {useNavigate, NavLink, Navigate, useLocation} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -15,6 +15,9 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 const AppHome = ({onMenuOff}) => {
+
+    const location = useLocation();
+    console.log(location.pathname);
 
     const dispatch = useDispatch();
     const {isAuth, email} = useAuth();
