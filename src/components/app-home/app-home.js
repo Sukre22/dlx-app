@@ -16,8 +16,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const AppHome = ({onMenuOff}) => {
 
-    const location = useLocation();
-    console.log(location.pathname);
+
 
     const dispatch = useDispatch();
     const {isAuth, email} = useAuth();
@@ -68,8 +67,8 @@ const AppHome = ({onMenuOff}) => {
                     </div>
                     <div className="app__menu-top_left">
                         <Stack direction="row" spacing={1}>
-                            <Chip label="Dialux Evo" /*variant="outlined"*/ onClick={handleClick}/>
-                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={handleClick}/>
+                            <Chip label="Dialux Evo" /*variant="outlined"*/ onClick={routeChange}/>
+                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={routeChange}/>
                         </Stack>
                         <IconButton
 

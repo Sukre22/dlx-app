@@ -17,8 +17,6 @@ import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
 
 const App = (props) => {
 
-    
-
 
     const [burger, setBurger] = useState(false);
 

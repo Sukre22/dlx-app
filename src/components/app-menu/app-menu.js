@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import './app-menu.scss';
-import {NavLink, Link, Outlet} from 'react-router-dom';
+import {NavLink, Link, Outlet, useLocation} from 'react-router-dom';
 import { red } from '@mui/material/colors';
 //import './app-menu-top.scss';
 import IconButton from '@mui/material/IconButton';
@@ -11,9 +11,19 @@ import Stack from '@mui/material/Stack';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+//import {useState} from '@types/react';
 
 
 const AppMenu = ({onBurgerChange, onMenuOff}) => {
+
+
+
+	const location = useLocation();
+	console.log(location.pathname);
+
+	/*const activeButton = {
+		if (location.pathname)
+	}*/
 
 
 	const handleClick = () => {
@@ -78,8 +88,8 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					</div>
 					<div className="app__menu-top_left">
 						<Stack direction="row" spacing={1}>
-							<Chip label="Dialux Evo" onClick={handleClick}/>
-							<Chip label="Dialux 4.13" variant="outlined" onClick={handleClick}/>
+							<Chip label="Dialux Evo" variant="outlined" onClick={handleClick}/>
+							<Chip label="Dialux 4.13"  onClick={handleClick}/>
 						</Stack>
 						<IconButton
 
