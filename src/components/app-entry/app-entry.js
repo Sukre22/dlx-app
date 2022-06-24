@@ -2,9 +2,11 @@ import React, {Component, useState} from 'react';
 import './app-entry.css';
 import {useFormik} from 'formik';
 import {useDispatch} from 'react-redux';
+import {useAuth} from 'hooks/use-auth';
+import {removeUser} from "store/slices/userSlice";
 import {setUser} from 'store/slices/userSlice';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 
 
 const validate = values => {
@@ -30,6 +32,7 @@ const AppEntry = (props) => {
 
     const dispatch = useDispatch();
     const history = useNavigate();
+    const {isAuth, email} = useAuth();
 
 
     const handleLogin = (email, password) => {
@@ -65,7 +68,7 @@ const AppEntry = (props) => {
 
 
 
-    return(
+    return !isAuth ?(
 
         <div class="form__body">
         <div className="form__container">
@@ -127,6 +130,8 @@ const AppEntry = (props) => {
         </div>
 
 
+    ) : (
+        <Navigate to="/" />
     )
 
 
