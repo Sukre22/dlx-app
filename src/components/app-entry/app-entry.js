@@ -1,5 +1,7 @@
 import React, {Component, useState} from 'react';
 import './app-entry.css';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 import {useFormik} from 'formik';
 import {useDispatch} from 'react-redux';
 import {useAuth} from 'hooks/use-auth';
@@ -111,15 +113,15 @@ const AppEntry = (props) => {
                     <div className="form__container-checkbox">
                         <div className="form__container-checkbox-wrap">
                             <input className="form__container-checkbox-input" type="checkbox" id="checkbox"/>
-                                <div className="form__container-checkbox-mark"></div>
-                                <label className="form__container-checkbox-label" htmlFor="checkbox">* Я согласен с <u>Правилами
-                                    пользования приложением</u></label>
+                                
+                                <label className="form__container-checkbox-label" htmlFor="checkbox">Забыли пароль?</label>
                         </div>
 
                         <div className="form__container-checkbox-invalid">Поле обязательно для заполнения</div>
                     </div>
                     <div className="form__container-button">
                         <button type="submit" className="form__container-button-press">Войти</button>
+                        
                     </div>
 
                 </div>
