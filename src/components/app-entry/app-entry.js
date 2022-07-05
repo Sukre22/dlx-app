@@ -111,13 +111,12 @@ const AppEntry = (props) => {
 
                     </div>
                     <div className="form__container-checkbox">
-                        <div className="form__container-checkbox-wrap">
-                            
+                        <div className="form__container-checkbox-wrap">                          
                                 
                                 <div className="form__container-checkbox-label">Забыли пароль?</div>
                         </div>
 
-                        <div className="form__container-checkbox-invalid">Поле обязательно для заполнения</div>
+                        
                     </div>
                     <div className="form__container-button">
                         <button type="submit" className="form__container-button-press">Войти</button>
