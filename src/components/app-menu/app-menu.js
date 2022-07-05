@@ -1,6 +1,9 @@
 import React, {Component, useState} from 'react';
 import './app-menu.scss';
-import {NavLink, Link, Outlet, useLocation} from 'react-router-dom';
+import {NavLink, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
+import {useAuth} from 'hooks/use-auth';
+import {useDispatch} from "react-redux";
+import {removeUser} from "store/slices/userSlice";
 import { red } from '@mui/material/colors';
 //import './app-menu-top.scss';
 import IconButton from '@mui/material/IconButton';
@@ -15,6 +18,9 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 const AppMenu = ({onBurgerChange, onMenuOff}) => {
+
+	const dispatch = useDispatch();
+    const {isAuth, email} = useAuth();
 
 
 
@@ -62,7 +68,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
         classNames = 'none';
     }
 
-        return(
+        return isAuth ? (
 			<>
 				<div className="app__menu-top">
 					<div className="app__menu-top_right">
@@ -118,7 +124,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 							onClose={handleClose}
 						>
 
-							<MenuItem onClick={handleClose}>Выход</MenuItem>
+							<MenuItem onClick={() => dispatch(removeUser())}>Выход</MenuItem>
 						</Menu>
 					</div>
 
@@ -196,6 +202,8 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 	 </>
 	 
  
+        ): (
+            <Navigate to="/login" />
         )
 
  
