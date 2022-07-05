@@ -158,6 +158,11 @@
 
     margin-left: 10px;
     margin-top: 5px;
+    cursor: pointer;
+}
+
+.form__container-checkbox-label:hover {
+    text-decoration: underline;
 }
 
 .form__container-checkbox-mark {

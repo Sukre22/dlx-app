@@ -112,9 +112,9 @@ const AppEntry = (props) => {
                     </div>
                     <div className="form__container-checkbox">
                         <div className="form__container-checkbox-wrap">
-                            <input className="form__container-checkbox-input" type="checkbox" id="checkbox"/>
+                            
                                 
-                                <label className="form__container-checkbox-label" htmlFor="checkbox">Забыли пароль?</label>
+                                <div className="form__container-checkbox-label">Забыли пароль?</div>
                         </div>
 
                         <div className="form__container-checkbox-invalid">Поле обязательно для заполнения</div>
