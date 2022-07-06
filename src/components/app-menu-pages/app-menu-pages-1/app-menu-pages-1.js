@@ -3,6 +3,7 @@ import './app-menu-pages-1.scss';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import video1 from "./video/1.mp4";
 
 
 
@@ -62,20 +63,27 @@ export default class AppMenuPages1 extends Component {
                     </div>
                     <div class="app__page-header_top-container-right">
                         <ChevronRightIcon  fontSize="large"/>
+                        
                     </div>
 
 
                 </div>
                 <div className="app__page-title_video">
                     <div class="video">
-                        <video width="1140" controls="controls">
-                            {/*<source src="../video/05.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>*/}
+
+                        {/* <iframe width="1140" height="640" src="https://www.youtube.com/embed/aBywpDjDixU"
+                                title="YouTube video player" frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen>
+                        </iframe> */}
+                        <video width="1140" height="640" controls="controls">
+                            <source src={video1} type="video/mp4" />
                         </video>
                     </div>
                 </div>
                 <div class="app__page-title_files">
                         <h3>Файлы</h3>
-                        <div class="app__page-title_files-wrap">
+                   <div class="app__page-title_files-wrap">
                             <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
 
                             <p className="app__page-title_files-wrap-zip">Урок-1.zip</p>
