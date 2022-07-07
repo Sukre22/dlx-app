@@ -10,6 +10,7 @@ import {removeUser} from "store/slices/userSlice";
 import {setUser} from 'store/slices/userSlice';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate, Navigate } from 'react-router-dom';
+//import LoadingButton from '@mui/lab/LoadingButton';
 
 
 const validate = values => {
@@ -36,6 +37,11 @@ const AppEntry = (props) => {
     const dispatch = useDispatch();
     const history = useNavigate();
     const {isAuth, email} = useAuth();
+
+    const [loading, setLoading] = React.useState(true);
+  function handleClick() {
+    setLoading(true);
+  }
 
 
     const handleLogin = (email, password) => {
@@ -128,6 +134,15 @@ const AppEntry = (props) => {
                         }}
                         >
                             Войти</Button>
+                        {/* <LoadingButton
+                            type="submit"                             
+                             loading={loading}
+                             variant="outlined"
+                             disabled
+                             >
+                            disabled
+                         </LoadingButton>*/}
+
                         
                     </div>
 
