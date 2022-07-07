@@ -76,7 +76,7 @@ export default class AppMenuPages1 extends Component {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen>
                         </iframe> */}
-                        <video width="1140" height="640" controls="controls">
+                        <video width="1140" height="640" controls controlsList="nodownload">
                             <source src={video1} type="video/mp4" />
                         </video>
                     </div>
