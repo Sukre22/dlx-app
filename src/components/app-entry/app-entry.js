@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import './app-entry.css';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import {useFormik} from 'formik';
 import {useDispatch} from 'react-redux';
 import {useAuth} from 'hooks/use-auth';
@@ -74,7 +75,7 @@ const AppEntry = (props) => {
 
         <div class="form__body">
         <div className="form__container">
-            <form onSubmit={formik.handleSubmit}>
+            <form novalidate onSubmit={formik.handleSubmit}>
 
                 <h1 className="form__container-title">Авторизация</h1>
                 <div className="form__container-wrap">
@@ -119,7 +120,14 @@ const AppEntry = (props) => {
                         
                     </div>
                     <div className="form__container-button">
-                        <button type="submit" className="form__container-button-press">Войти</button>
+                        {/*<button type="submit" className="form__container-button-press">Войти</button>*/}
+                        <Button type="submit" variant="outlined"
+                        classes={{
+                            color: '#787878',
+                            width: '200px'
+                        }}
+                        >
+                            Войти</Button>
                         
                     </div>
 
