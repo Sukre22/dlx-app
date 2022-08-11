@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './app-menu.scss';
-import {NavLink, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
+import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -31,10 +31,15 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 		if (location.pathname)
 	}*/
 
-
-	const handleClick = () => {
-		console.info('You clicked the Chip.');
-	};
+    let navigate = useNavigate();
+	const routeChange = () =>{
+        let path = `dlxevo`;
+        navigate(path);
+    }
+    const routeChange2 = () =>{
+        let path = `dlx413`;
+        navigate(path);
+    }
 
 	const [auth, setAuth] = React.useState(true);
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -94,8 +99,8 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					</div>
 					<div className="app__menu-top_left">
 						<Stack direction="row" spacing={1}>
-							<Chip label="Dialux Evo" variant="outlined" onClick={handleClick}/>
-							<Chip label="Dialux 4.13"  onClick={handleClick}/>
+							<Chip label="Dialux Evo" variant="outlined" onClick={routeChange}/>
+							<Chip label="Dialux 4.13"  onClick={routeChange2}/>
 						</Stack>
 						<IconButton
 
