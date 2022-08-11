@@ -39,7 +39,7 @@ const App = (props) => {
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
                     </Route> 
-                    <Route path='/dlx413' element={ <AppMenuSecond onMenuOff={burger}/>}>
+                    <Route path='/dlx413' element={ <AppMenuSecond onMenuOff={burger} onBurgerChange={onBurger}/>}>
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                         <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
                     </Route>
