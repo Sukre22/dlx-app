@@ -27,6 +27,10 @@ const AppHome = ({onMenuOff}) => {
         let path = `dlxevo`;
         navigate(path);
     }
+    const routeChange2 = () =>{
+        let path = `dlx413`;
+        navigate(path);
+    }
 
 
     const handleClick = () => {
@@ -69,7 +73,7 @@ const AppHome = ({onMenuOff}) => {
                     <div className="app__menu-top_left">
                         <Stack direction="row" spacing={1}>
                             <Chip label="Dialux Evo" /*variant="outlined"*/ onClick={routeChange}/>
-                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={routeChange}/>
+                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={routeChange2}/>
                         </Stack>
                         <IconButton
 
@@ -152,7 +156,7 @@ const AppHome = ({onMenuOff}) => {
                                                 и удобнее чем в Dialux Evo, также сами разработчики рекомендуют делать спортивное освещение именно на этой версии.</p>
                                                 <p className="card__text-p">Преподаватель: Милова Татьяна</p>
                                                 {/*<button className="btn btn--block card__btn">Выбрать</button>*/}
-                                                <Chip label="Выбрать" variant="outlined" onClick={routeChange}/>
+                                                <Chip label="Выбрать" variant="outlined" onClick={routeChange2}/>
                                             </div>
                                         </div>
                                     </li>

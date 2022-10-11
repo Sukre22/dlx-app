@@ -6,6 +6,7 @@ import {store, persistor} from 'store';
 import {PersistGate} from 'redux-persist/integration/react';
 
 import AppMenu from '../app-menu/app-menu.js';
+import AppMenuSecond from '../app-menu-second/app-menu-second.js';
 import AppMenuTop from '../app-menu-top/app-menu-top.js';
 import AppMenuPages2 from '../app-menu-pages/app-menu-pages-2/app-menu-pages-2.js';
 import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.js';
@@ -38,7 +39,7 @@ const App = (props) => {
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
                     </Route> 
-                    <Route path='/dlx413' element={ <AppMenu onMenuOff={burger}/>}>
+                    <Route path='/dlx413' element={ <AppMenuSecond onMenuOff={burger} onBurgerChange={onBurger}/>}>
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                         <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>
                     </Route>

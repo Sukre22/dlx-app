@@ -1,11 +1,9 @@
 import React, {Component, useState} from 'react';
-import './app-menu.scss';
-import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
+import './app-menu-second.scss';
+import {NavLink, Outlet, useLocation, Navigate} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
-import { red } from '@mui/material/colors';
-//import './app-menu-top.scss';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
@@ -14,10 +12,10 @@ import Stack from '@mui/material/Stack';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-//import {useState} from '@types/react';
 
 
-const AppMenu = ({onBurgerChange, onMenuOff}) => {
+
+const AppMenuSecond = ({onBurgerChange, onMenuOff}) => {
 
 	const dispatch = useDispatch();
     const {isAuth, email} = useAuth();
@@ -25,21 +23,12 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 
 
 	const location = useLocation();
-	console.log(location.pathname);
+	console.log(location.pathname);	
 
-	/*const activeButton = {
-		if (location.pathname)
-	}*/
 
-    let navigate = useNavigate();
-	const routeChange = () =>{
-        let path = `dlxevo`;
-        navigate(path);
-    }
-    const routeChange2 = () =>{
-        let path = `dlx413`;
-        navigate(path);
-    }
+	const handleClick = () => {
+		console.info('You clicked the Chip.');
+	};
 
 	const [auth, setAuth] = React.useState(true);
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -57,9 +46,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 	};
 
 
-	const burgerClick = () => {
-		console.info('You clicked the Chip.');
-	};
+	
 
 
 
@@ -77,8 +64,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 			<>
 				<div className="app__menu-top">
 					<div className="app__menu-top_right">
-						<div className="app__menu-top_right-burger">
-							{/*<MenuIcon className={'app__menu-top_right-burger-icon'} />*/}
+						<div className="app__menu-top_right-burger">							
 							<IconButton
 								className={'app__menu-top_right-burger-icon'}
 								size="large"
@@ -99,8 +85,8 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					</div>
 					<div className="app__menu-top_left">
 						<Stack direction="row" spacing={1}>
-							<Chip label="Dialux Evo" variant="outlined" onClick={routeChange}/>
-							<Chip label="Dialux 4.13"  onClick={routeChange2}/>
+							<Chip label="Dialux Evo"  onClick={handleClick}/>
+							<Chip label="Dialux 4.13" variant="outlined" onClick={handleClick}/>
 						</Stack>
 						<IconButton
 
@@ -146,51 +132,36 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 			       className={"app__menu-list-head end"}
 				   end
 				   style={setActive}
-				   to='/dlxevo'>1 Введение</NavLink>
+				   to='/dlx413'>1 Введение</NavLink>
 			   </li>
 
 			  <li><NavLink
 				    className={"app__menu-list-head end"}
 					end
 					style={setActive}
-					to="/dlxevo/guide">2 Основные понятия и определения</NavLink>
+					to="/dlx413/guide">2 Основные понятия и определения</NavLink>
 			  </li>
 
 				<li><NavLink
 					className={"app__menu-list-head end"}
 					end
 					style={setActive}
-					to="/dlxevo/3">3 Знакомство с интерфейсом программы</NavLink>
+					to="/dlx413/3">3 Знакомство с интерфейсом программы</NavLink>
 				</li>
 
 				<li><NavLink
 					className={"app__menu-list-head end"}
 					end
 					style={setActive}
-					to="/dlxevo/4">4 Моделирование освещаемого объекта</NavLink>
+					to="/dlx413/4">4 Спортивное освещение</NavLink>
 				</li>
 
 
 
-				{/* <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li> */}
-				{/*<li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>*/}
-			   <li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>
-			   <li class="app__menu-list-part">4.2 Построение зданий и его помещений</li>
-			   <li class="app__menu-list-part">4.3 Добавление дверей, окон, потолков и крыши</li>
-			   <li class="app__menu-list-part">4.4 Добавление 3D объектов</li>
-			   <li class="app__menu-list-part end">4.5 Применение материалов и цветов</li>
-			   <li class="app__menu-list-head">5 Расчет освещения</li>
-			   <li class="app__menu-list-part">5.1 Расстановка и настройка светильников</li>
-			   <li class="app__menu-list-part">5.2 Создание расчетных поверхностей</li>
-			   <li class="app__menu-list-part">5.3 Настройка результатов расчета</li>
-			   <li class="app__menu-list-part end">5.4 Расчет аварийного освещения</li>
-			   <li class="app__menu-list-head end">6 Создание отчета</li>
-			   <li class="app__menu-list-head">7 Практика</li>
-			   <li class="app__menu-list-part">7.1 Расчет наружного освещения</li>
-			   <li class="app__menu-list-part">7.2 Расчет периметрального освещения</li>
-			   <li class="app__menu-list-part">7.3 Расчет спортивной площадки с учетом UGR-показателя</li>
-			   <li class="app__menu-list-part end">7.4 Расчет спортивной площадки с учетом GR-показателя</li>
-			   <li class="app__menu-list-head end">8 Заключение</li>
+			
+			   <li class="app__menu-list-part">4.1 Нормы, расчетные поверхности, расстановка светильников</li>
+			   <li class="app__menu-list-part">4.2 Равномерность, освещенность на камеру, GR</li>
+			  
 			</ul>
 
 				<footer className="app__footer">
@@ -215,4 +186,4 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
  
  }
 
- export default AppMenu;
+ export default AppMenuSecond;
