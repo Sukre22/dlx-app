@@ -5,12 +5,12 @@ import {useDispatch} from "react-redux";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Wavelength from './img/wavelength.jpg';
-import LuminousFlux from './img/luminous flux.jpg';
+import LuminousFlux from './img/luminous flux.png';
 import LightIntensity from './img/light intensity.jpg';
-import LightOutput from './img/light output.jpg';
+import LightOutput from './img/light output.png';
 import ColorTemperature from './img/color temperature.jpg';
-import CRI from './img/cri.jpg';
-import IP from './img/IP.jpg';
+import CRI from './img/cri.png';
+import IP from './img/IP.png';
 
 
 const AppMenuPages2 = ({onMenuOff}) => {
