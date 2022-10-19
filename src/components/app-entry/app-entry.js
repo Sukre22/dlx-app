@@ -8,7 +8,7 @@ import {useDispatch} from 'react-redux';
 import {useAuth} from 'hooks/use-auth';
 import {removeUser} from "store/slices/userSlice";
 import {setUser} from 'store/slices/userSlice';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate, Navigate } from 'react-router-dom';
 //import LoadingButton from '@mui/lab/LoadingButton';
 
@@ -71,6 +71,44 @@ const AppEntry = (props) => {
         onSubmit: values => handleLogin(values.email, values.password)
     })
 
+    const [setEmail] = useState('')
+    const auth = getAuth();
+
+    /*const triggerResetEmail = async () => {
+        await sendPasswordResetEmail(auth, email);
+        console.log("Password reset email sent")
+    }*/
+
+
+   /*const triggerResetEmail = (email) => {
+        const auth = getAuth();
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                // Password reset email sent!
+                // ..
+                console.log("Password reset email sent")
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+    }*/
+
+    const triggerResetEmail = (email) => {
+
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                // Password reset email sent!
+                // ..
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+
+    }
 
 
 
@@ -120,7 +158,7 @@ const AppEntry = (props) => {
                     <div className="form__container-checkbox">
                         <div className="form__container-checkbox-wrap">                          
                                 
-                                <div className="form__container-checkbox-label">Забыли пароль?</div>
+                                <div className="form__container-checkbox-label" onClick={triggerResetEmail} >Забыли пароль?</div>
                         </div>
 
                         

@@ -13,6 +13,7 @@ import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.j
 import AppHome from '../app-home/app-home.js';
 import AppEntry from "../app-entry/app-entry";
 import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
+import AppForgotPassword from "../app-forgot-rassword/app-forgot-password.js";
 
 
 
@@ -33,8 +34,10 @@ const App = (props) => {
                 <Provider store={store}>
                  <PersistGate loading={null} persistor={persistor}>
                   <Routes>
+                      <Route path='/forgotpassword' element={<AppForgotPassword/>}/>
                     <Route path='/' element={<AppHome/>}/>
                     <Route path='/login' element={<AppEntry/>}/>
+
                     <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger} onBurgerChange={onBurger}/>}>
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
