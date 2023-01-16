@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dlx-app/static/css/main.934c17af.css",
+    "main.css": "/dlx-app/static/css/main.20626835.css",
     "main.js": "/dlx-app/static/js/main.899f7662.js",
     "static/media/1.mp4": "/dlx-app/static/media/1.16550979ef371d4f16a5.mp4",
     "static/media/IP.png": "/dlx-app/static/media/IP.f44bb90c78fd2ae4c40c.png",
@@ -11,11 +11,11 @@
     "static/media/light intensity.jpg": "/dlx-app/static/media/light intensity.0859a42e8e7edc0f5b22.jpg",
     "static/media/wavelength.jpg": "/dlx-app/static/media/wavelength.c41c20e4f240b7cb1eff.jpg",
     "index.html": "/dlx-app/index.html",
-    "main.934c17af.css.map": "/dlx-app/static/css/main.934c17af.css.map",
+    "main.20626835.css.map": "/dlx-app/static/css/main.20626835.css.map",
     "main.899f7662.js.map": "/dlx-app/static/js/main.899f7662.js.map"
   },
   "entrypoints": [
-    "static/css/main.934c17af.css",
+    "static/css/main.20626835.css",
     "static/js/main.899f7662.js"
   ]
 }
