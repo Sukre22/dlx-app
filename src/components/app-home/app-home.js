@@ -127,7 +127,7 @@ const AppHome = ({onMenuOff}) => {
                         </div>
                         <div className="app__home-title">
 
-                            <h3 className='app__home-title-h3'>Выберите версию Dialux, с которой хотите начать обучение :</h3>
+                            <h3 className='app__home-title-h3'>Выберите курс, чтобы начать обучение:</h3>
                             <div class="app__home-title_description">
                                 <ul className="cards">
                                     <li className="cards__item first_item">
@@ -146,7 +146,7 @@ const AppHome = ({onMenuOff}) => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className="cards__item second_item">
+                                   {/* <li className="cards__item second_item">
                                         <div className="card">
                                             <div className="card__image card__image--river"></div>
                                             <div className="card__content">
@@ -155,11 +155,11 @@ const AppHome = ({onMenuOff}) => {
                                                 однако в нем есть функционал, который позволяет делать спортивное освещение намного быстрее
                                                 и удобнее чем в Dialux Evo, также сами разработчики рекомендуют делать спортивное освещение именно на этой версии.</p>
                                                 <p className="card__text-p">Преподаватель: Милова Татьяна</p>
-                                                {/*<button className="btn btn--block card__btn">Выбрать</button>*/}
+                                                
                                                 <Chip label="Выбрать" variant="outlined" onClick={routeChange2}/>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li>*/}
                                         </ul>
 
                             </div>
