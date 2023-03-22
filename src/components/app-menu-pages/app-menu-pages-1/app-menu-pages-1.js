@@ -3,7 +3,7 @@ import './app-menu-pages-1.scss';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import video1 from "./video/1.mp4";
+
 
 
 

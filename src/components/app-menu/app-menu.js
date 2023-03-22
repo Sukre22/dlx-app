@@ -170,14 +170,42 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					to="/dlxevo/4">4 Моделирование освещаемого объекта</NavLink>
 				</li>
 
+				<li><NavLink
+					className={"app__menu-list-part"}
+					end
+					style={setActive}
+					to="/dlxevo/4.1">4.1 Импорт чертежей различных форматов</NavLink>
+				</li>
+
+				<li><NavLink
+					className={"app__menu-list-part"}
+					end
+					style={setActive}
+					to="/dlxevo/4.2">4.2 Построение зданий и его помещений</NavLink>
+				</li>
+
+				<li><NavLink
+					className={"app__menu-list-part"}
+					end
+					style={setActive}
+					to="/dlxevo/4.3">4.3 Добавление дверей, окон, потолков и крыши</NavLink>
+				</li>
+
+				<li><NavLink
+					className={"app__menu-list-part"}
+					end
+					style={setActive}
+					to="/dlxevo/4.4">4.4 Добавление 3D объектов</NavLink>
+				</li>
+
 
 
 				{/* <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li> */}
 				{/*<li class="app__menu-list-head">4 Моделирование освещаемого объекта</li>*/}
-			   <li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>
-			   <li class="app__menu-list-part">4.2 Построение зданий и его помещений</li>
-			   <li class="app__menu-list-part">4.3 Добавление дверей, окон, потолков и крыши</li>
-			   <li class="app__menu-list-part">4.4 Добавление 3D объектов</li>
+			   {/*<li class="app__menu-list-part">4.1 Импорт чертежей различных форматов</li>*/}
+			   {/*<li class="app__menu-list-part">4.2 Построение зданий и его помещений</li>*/}
+			   {/*<li class="app__menu-list-part">4.3 Добавление дверей, окон, потолков и крыши</li>*/}
+			   {/*<li class="app__menu-list-part">4.4 Добавление 3D объектов</li>*/}
 			   <li class="app__menu-list-part end">4.5 Применение материалов и цветов</li>
 			   <li class="app__menu-list-head">5 Расчет освещения</li>
 			   <li class="app__menu-list-part">5.1 Расстановка и настройка светильников</li>
