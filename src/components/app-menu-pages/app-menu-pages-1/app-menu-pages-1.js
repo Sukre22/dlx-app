@@ -71,14 +71,14 @@ export default class AppMenuPages1 extends Component {
                 <div className="app__page-title_video">
                     <div class="video">
 
-                         {/*<iframe width="1140" height="640" src="https://drive.google.com/file/d/1HfQacqLoc8XczHE72iUQ-R7FPv8WALcA/view?usp=sharing"
+                         <iframe width="1140" height="640" src="https://youtu.be/aBywpDjDixU"
                                 title="YouTube video player" frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen>
-                        </iframe>*/}
-                        <video width="1140" height="640" controls controlsList="nodownload">
+                        </iframe>
+                        {/*<video width="1140" height="640" controls controlsList="nodownload">
                             <source src={video1} type="video/mp4" />
-                        </video> 
+                        </video> */}
                     </div>
                 </div>
                 <div class="app__page-title_files">
