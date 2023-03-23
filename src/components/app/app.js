@@ -20,6 +20,9 @@ import AppMenuPages45 from '../app-menu-pages/app-menu-pages-4.5/app-menu-pages-
 import AppMenuPages51 from '../app-menu-pages/app-menu-pages-5.1/app-menu-pages-5.1.js';
 import AppMenuPages52 from '../app-menu-pages/app-menu-pages-5.2/app-menu-pages-5.2.js';
 import AppMenuPages53 from '../app-menu-pages/app-menu-pages-5.3/app-menu-pages-5.3.js';
+import AppMenuPages6 from '../app-menu-pages/app-menu-pages-6/app-menu-pages-6.js';
+import AppMenuPages7 from '../app-menu-pages/app-menu-pages-7/app-menu-pages-7.js';
+import AppMenuPages8 from '../app-menu-pages/app-menu-pages-8/app-menu-pages-8.js';
 import AppHome from '../app-home/app-home.js';
 import AppEntry from "../app-entry/app-entry";
 import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
@@ -61,6 +64,9 @@ const App = (props) => {
                        <Route path="5.1" element={<AppMenuPages51 onMenuOff={burger} />}/>                                                  
                        <Route path="5.2" element={<AppMenuPages52 onMenuOff={burger} />}/>                                                  
                        <Route path="5.3" element={<AppMenuPages53 onMenuOff={burger} />}/>                                                  
+                       <Route path="6" element={<AppMenuPages6 onMenuOff={burger} />}/>                                                  
+                       <Route path="7" element={<AppMenuPages7 onMenuOff={burger} />}/>                                                  
+                       <Route path="8" element={<AppMenuPages8 onMenuOff={burger} />}/>                                                  
                     </Route> 
                    {/* <Route path='/dlx413' element={ <AppMenuSecond onMenuOff={burger} onBurgerChange={onBurger}/>}>
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>

@@ -233,6 +233,27 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					to="/dlxevo/5.3">5.3 Расчет аварийного освещения</NavLink>
 				</li>
 
+				<li><NavLink
+					className={"app__menu-list-head end"}
+					end
+					style={setActive}
+					to="/dlxevo/6">6 Расчет наружного освещения</NavLink>
+				</li>
+
+				<li><NavLink
+					className={"app__menu-list-head end"}
+					end
+					style={setActive}
+					to="/dlxevo/7">7 Создание отчета</NavLink>
+				</li>
+
+				<li><NavLink
+					className={"app__menu-list-head end"}
+					end
+					style={setActive}
+					to="/dlxevo/8">8 Заключение</NavLink>
+				</li>
+
 
 
 				{/* <li class="app__menu-list-head end">3 Знакомство с интерфейсом программы</li> */}
@@ -246,9 +267,9 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 			   {/*<li class="app__menu-list-part">5.1 Расстановка и настройка светильников</li>*/}
 			   {/*<li class="app__menu-list-part">5.2 Создание расчетных поверхностей</li>*/}			   
 			   {/*<li class="app__menu-list-part end">5.3 Расчет аварийного освещения</li>*/}
-			   <li class="app__menu-list-head end">6 Расчет наружного освещения</li> 		   	   
-			   <li class="app__menu-list-head end">7 Создание отчета</li>
-			   <li class="app__menu-list-head end">8 Заключение</li>
+			   {/*<li class="app__menu-list-head end">6 Расчет наружного освещения</li>*/} 		   	   
+			    {/*<li class="app__menu-list-head end">7 Создание отчета</li>*/}
+			   {/*<li class="app__menu-list-head end">8 Заключение</li>*/}
 			</ul>
 
 				<footer className="app__footer">
