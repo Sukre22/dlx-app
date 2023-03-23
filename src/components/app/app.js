@@ -15,7 +15,11 @@ import AppMenuPages4 from '../app-menu-pages/app-menu-pages-4/app-menu-pages-4.j
 import AppMenuPages41 from '../app-menu-pages/app-menu-pages-4.1/app-menu-pages-4.1.js';
 import AppMenuPages42 from '../app-menu-pages/app-menu-pages-4.2/app-menu-pages-4.2.js';
 import AppMenuPages43 from '../app-menu-pages/app-menu-pages-4.3/app-menu-pages-4.3.js';
-import AppMenuPages44 from '../app-menu-pages/app-menu-pages-4.3/app-menu-pages-4.3.js';
+import AppMenuPages44 from '../app-menu-pages/app-menu-pages-4.4/app-menu-pages-4.4.js';
+import AppMenuPages45 from '../app-menu-pages/app-menu-pages-4.5/app-menu-pages-4.5.js';
+import AppMenuPages51 from '../app-menu-pages/app-menu-pages-5.1/app-menu-pages-5.1.js';
+import AppMenuPages52 from '../app-menu-pages/app-menu-pages-5.2/app-menu-pages-5.2.js';
+import AppMenuPages53 from '../app-menu-pages/app-menu-pages-5.3/app-menu-pages-5.3.js';
 import AppHome from '../app-home/app-home.js';
 import AppEntry from "../app-entry/app-entry";
 import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
@@ -53,6 +57,10 @@ const App = (props) => {
                        <Route path="4.2" element={<AppMenuPages42 onMenuOff={burger} />}/>                                                  
                        <Route path="4.3" element={<AppMenuPages43 onMenuOff={burger} />}/>                                                  
                        <Route path="4.4" element={<AppMenuPages44 onMenuOff={burger} />}/>                                                  
+                       <Route path="4.5" element={<AppMenuPages45 onMenuOff={burger} />}/>                                                  
+                       <Route path="5.1" element={<AppMenuPages51 onMenuOff={burger} />}/>                                                  
+                       <Route path="5.2" element={<AppMenuPages52 onMenuOff={burger} />}/>                                                  
+                       <Route path="5.3" element={<AppMenuPages53 onMenuOff={burger} />}/>                                                  
                     </Route> 
                    {/* <Route path='/dlx413' element={ <AppMenuSecond onMenuOff={burger} onBurgerChange={onBurger}/>}>
                         <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>

@@ -119,7 +119,7 @@ const AppHome = ({onMenuOff}) => {
                         <div class="app__home-header_top-container">
 
                             <div class="app__home-header_top-container-title">
-                                <h2 class='work'>Добро пожаловать на курс!</h2>
+                                <h2 class='work'>Добро пожаловать!</h2>
                             </div>
 
 
@@ -127,7 +127,7 @@ const AppHome = ({onMenuOff}) => {
                         </div>
                         <div className="app__home-title">
 
-                            <h3 className='app__home-title-h3'>Выберите курс, чтобы начать обучение:</h3>
+                            <h3 className='app__home-title-h3'>Выберите доступный для Вас курс, чтобы начать обучение:</h3>
                             <div class="app__home-title_description">
                                 <ul className="cards">
                                     <li className="cards__item first_item">
