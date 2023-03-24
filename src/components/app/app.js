@@ -11,7 +11,7 @@ import AppMenuTop from '../app-menu-top/app-menu-top.js';
 import AppMenuPages2 from '../app-menu-pages/app-menu-pages-2/app-menu-pages-2.js';
 import AppMenuPages1 from '../app-menu-pages/app-menu-pages-1/app-menu-pages-1.js';
 import AppMenuPages3 from '../app-menu-pages/app-menu-pages-3/app-menu-pages-3.js';
-import AppMenuPages4 from '../app-menu-pages/app-menu-pages-4/app-menu-pages-4.js';
+
 import AppMenuPages41 from '../app-menu-pages/app-menu-pages-4.1/app-menu-pages-4.1.js';
 import AppMenuPages42 from '../app-menu-pages/app-menu-pages-4.2/app-menu-pages-4.2.js';
 import AppMenuPages43 from '../app-menu-pages/app-menu-pages-4.3/app-menu-pages-4.3.js';
@@ -54,8 +54,8 @@ const App = (props) => {
                     <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger} onBurgerChange={onBurger}/>}>
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
-                       <Route path="3" element={<AppMenuPages3 onMenuOff={burger} />}/>                                                  
-                       <Route path="4" element={<AppMenuPages4 onMenuOff={burger} />}/>                                                  
+                       <Route path="3" element={<AppMenuPages3 onMenuOff={burger} />}/>                                           
+                                                                      
                        <Route path="4.1" element={<AppMenuPages41 onMenuOff={burger} />}/>                                                  
                        <Route path="4.2" element={<AppMenuPages42 onMenuOff={burger} />}/>                                                  
                        <Route path="4.3" element={<AppMenuPages43 onMenuOff={burger} />}/>                                                  

@@ -59,7 +59,7 @@ export default class AppMenuPages41 extends Component {
                         <ChevronLeftIcon fontSize="large"/>
                     </div>
                     <div class="app__page-header_top-container-title">
-                        <h2 class='work'>1 Введение</h2>
+                        <h2 class='work'>4.1 Импорт чертежей различных форматов</h2>
                     </div>
                     <div class="app__page-header_top-container-right">
                         <ChevronRightIcon  fontSize="large"/>

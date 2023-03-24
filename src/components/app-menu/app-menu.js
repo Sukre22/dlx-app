@@ -41,6 +41,16 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
         navigate(path);
     }
 
+    const routeChange3 = () =>{
+        let path = `4.1`;
+        navigate(path);
+    }
+
+    const routeChange4 = () =>{
+        let path = `5.1`;
+        navigate(path);
+    }
+
 	const [auth, setAuth] = React.useState(true);
 	const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -93,7 +103,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 						</div>
 						<div className="app__menu-top_right-description">
 							<EmojiObjectsIcon fontSize="large"/>
-							<div>Обучающий курс по Dialux Evo/Dialux 4.13</div>
+							<div>Обучающий курс по Dialux Evo</div>
 						</div>
 
 					</div>
@@ -163,11 +173,9 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					to="/dlxevo/3">3 Знакомство с интерфейсом программы</NavLink>
 				</li>
 
-				<li><NavLink
-					className={"app__menu-list-head end"}
-					end
-					style={setActive}
-					to="/dlxevo/4">4 Моделирование освещаемого объекта</NavLink>
+				<li
+					className={"app__menu-list-head end"} onClick={routeChange3}> 					
+					4 Моделирование освещаемого объекта
 				</li>
 
 				<li><NavLink
@@ -205,11 +213,9 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					to="/dlxevo/4.5">4.5 Применение материалов и цветов</NavLink>
 				</li>
 				
-				<li><NavLink
-					className={"app__menu-list-head"}
-					end
-					style={setActive}
-					to="/dlxevo/5">5 Расчет освещения</NavLink>
+				<li
+					className={"app__menu-list-head"} onClick={routeChange4}>			
+					5 Расчет освещения
 				</li>
 
 				<li><NavLink
