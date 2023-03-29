@@ -84,7 +84,7 @@
 	}
 }
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
 	width: 12px;
 	background: #eeeeee;
 }
@@ -97,7 +97,7 @@
 	background: #ccc;
 	-webkit-border-radius: 1ex;
 	border:2px solid  #eeeeee;
-}
+}*/
 
 .app__menu-top {
 	display: flex;
@@ -134,6 +134,12 @@
 		align-items: center;
 		margin-right: 20px;
 	}
+}
+
+#nohover{
+	pointer-events: none;
+	
+	
 }
 
 

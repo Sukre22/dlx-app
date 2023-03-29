@@ -96,7 +96,7 @@ export default class AppMenuPages41 extends Component {
                    <div class="app__page-title_files-wrap">
                             <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
 
-                            <p className="app__page-title_files-wrap-zip">Урок-1.zip</p>
+                            <p className="app__page-title_files-wrap-zip">Урок-4.1.zip</p>
                         </div>
 
                 </div>

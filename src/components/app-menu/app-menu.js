@@ -168,13 +168,15 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 
 				<li><NavLink
 					className={"app__menu-list-head end"}
+					
 					end
 					style={setActive}
 					to="/dlxevo/3">3 Знакомство с интерфейсом программы</NavLink>
 				</li>
 
 				<li
-					className={"app__menu-list-head end"} onClick={routeChange3}> 					
+					className={"app__menu-list-head end 4"}
+					id={"nohover"}>  					
 					4 Моделирование освещаемого объекта
 				</li>
 
@@ -214,7 +216,8 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 				</li>
 				
 				<li
-					className={"app__menu-list-head"} onClick={routeChange4}>			
+					className={"app__menu-list-head"} 
+					id={"nohover"}>  				
 					5 Расчет освещения
 				</li>
 
