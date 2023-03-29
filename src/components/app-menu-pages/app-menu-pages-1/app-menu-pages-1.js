@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './app-menu-pages-1.scss';
+import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
@@ -14,25 +15,7 @@ export default class AppMenuPages1 extends Component {
 
 
 
-    const dataList = [
-
-        {
-            id: 3,
-            name: '3 Знакомство с интерфейсом программы',
-            files: 'Урок-3.zip',
-            taskFirst: 'Первое задание',
-            taskSecond: 'Второе задание'
-        },
-
-        {
-            id: 4.1,
-            name: '4.1 Импорт чертежей различных форматов',
-            files: 'Урок-4.1.zip',
-            taskFirst: 'Третье задание',
-            taskSecond: 'Четвертое задание'
-        }
-
-    ];
+   
 
         const {onMenuOff} = this.props;
 
@@ -41,6 +24,13 @@ export default class AppMenuPages1 extends Component {
         if (onMenuOff === true) {
             className += " body__active";
         }
+
+       
+
+       /* const routeChange1 = () =>{
+            let path = `guide`;
+            navigate(path);
+        }*/
 
 
 
@@ -55,13 +45,13 @@ export default class AppMenuPages1 extends Component {
 
 
                 <div class="app__page-header_top-container">
-                    <div class="app__page-header_top-container-left">
-                        <ChevronLeftIcon fontSize="large"/>
-                    </div>
+        
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>1 Введение</h2>
                     </div>
-                    <div class="app__page-header_top-container-right">
+                    <div class="app__page-header_top-container-right"
+                  /*  onClick={routeChange1}*/>
+                        
                         <ChevronRightIcon  fontSize="large"/>
                         
                     </div>

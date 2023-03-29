@@ -43,10 +43,10 @@ export default class AppMenuPages8 extends Component {
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>8 Заключение</h2>
                     </div>
-                    <div class="app__page-header_top-container-right">
+                    {/*<div class="app__page-header_top-container-right">
                         <ChevronRightIcon  fontSize="large"/>
                         
-                    </div>
+               </div>*/}
 
 
                 </div>
