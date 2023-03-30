@@ -49,8 +49,8 @@ export default class AppMenuPages1 extends Component {
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>1 Введение</h2>
                     </div>
-                    <div class="app__page-header_top-container-right"
-                  /*  onClick={routeChange1}*/>
+                    <div class="app__page-header_top-container-right">
+                  
                         
                         <ChevronRightIcon  fontSize="large"/>
                         
@@ -71,14 +71,7 @@ export default class AppMenuPages1 extends Component {
 
 
 
-                         {/*<iframe width="1140" height="640" src="https://youtu.be/aBywpDjDixU"
-                                title="YouTube video player" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen>
-                        </iframe>
-                        {/*<video width="1140" height="640" controls controlsList="nodownload">
-                            <source src={video1} type="video/mp4" />
-                        </video> */}
+                         
                     </div>
                 </div>
                 <div class="app__page-title_files">
