@@ -54,7 +54,7 @@ const App = (props) => {
                     <Route path='/dlxevo' element={ <AppMenu onMenuOff={burger} onBurgerChange={onBurger}/>}>
                        <Route index element={<AppMenuPages1 onMenuOff={burger}/> }/>
                        <Route path="guide" element={<AppMenuPages2 onMenuOff={burger} />}/>                                                  
-                       <Route path="3" element={<AppMenuPages3 onMenuOff={burger} />}/>                                           
+                       <Route path="3" element={<AppMenuPages3 onMenuOff={burger} />}/>                                        
                                                                       
                        <Route path="4.1" element={<AppMenuPages41 onMenuOff={burger} />}/>                                                  
                        <Route path="4.2" element={<AppMenuPages42 onMenuOff={burger} />}/>                                                  
