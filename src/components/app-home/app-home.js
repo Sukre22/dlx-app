@@ -72,7 +72,7 @@ const AppHome = ({onMenuOff}) => {
                     </div>
                     <div className="app__menu-top_left">
                         <Stack direction="row" spacing={1}>
-                            <Chip label="Dialux Evo" /*variant="outlined"*/ onClick={routeChange}/>
+                            <Chip label=">" /*variant="outlined"*/ onClick={routeChange}/>
                             <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={routeChange2}/>
                         </Stack>
                         <IconButton

@@ -4,20 +4,26 @@ import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-r
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 
 
 
 
 
-export default class AppMenuPages1 extends Component {
+const AppMenuPages1 = ({onMenuOff}) => {
 
-    render() {
+    
 
-
+    let navigate = useNavigate();
+    const routeChange3 = () =>{
+        let path = `guide`;
+        navigate(path);
+    }
 
    
 
-        const {onMenuOff} = this.props;
+       // const {onMenuOff} = this.props;
 
 
         let className = "app__page-header";
@@ -49,10 +55,12 @@ export default class AppMenuPages1 extends Component {
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>1 Введение</h2>
                     </div>
-                    <div class="app__page-header_top-container-right">
+                    <div class="app__page-header_top-container-right" >
                   
                         
-                        <ChevronRightIcon  fontSize="large"/>
+                       { <ChevronRightIcon  fontSize="large" onClick={routeChange3}/>}
+
+                      
                         
                     </div>
 
@@ -112,5 +120,7 @@ export default class AppMenuPages1 extends Component {
 
     )
 
+
 }
-}
+
+export default AppMenuPages1;

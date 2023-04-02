@@ -20,17 +20,17 @@ const AppForgotPassword = (props) => {
 
     return (
 
-        <div class="form__body">
-        <div className="form__container">
-            <form novalidate>
+        <div class="form__body_FP">
+        <div className="form__container_FP">
+            <div novalidate>
 
-                <h1 className="form__container-title">Введите email</h1>
-                <div className="form__container-wrap">
+                <h1 className="form__container-title_FP">Введите email</h1>
+                <div className="form__container-wrap_FP">
 
 
-                    <div className="form__container-group">
+                    <div className="form__container-group_FP">
 
-                        <input className="form__container-group-input"
+                        <input className="form__container-group-input_FP"
                                placeholder="Введите email"
                                type="password"
                                name="password" />
@@ -38,15 +38,15 @@ const AppForgotPassword = (props) => {
 
 
                     </div>
-                    <div className="form__container-checkbox">
-                        <div className="form__container-checkbox-wrap">                          
-                                
-                                <div className="form__container-checkbox-label">Забыли пароль?</div>
-                        </div>
+                    <div className="form__container-checkbox_FP">
+                        {/*<div className="form__container-checkbox-wrap_FP">
 
-                        
+                                <div className="form__container-checkbox-label_FP">Забыли пароль?</div>
+                        </div>*/}
+
+
                     </div>
-                    <div className="form__container-button">
+                    <div className="form__container-button_FP">
 
                         <Button type="submit" variant="outlined"
                         classes={{
@@ -54,14 +54,14 @@ const AppForgotPassword = (props) => {
                             width: '200px'
                         }}
                         >
-                            Войти</Button>
+                            Отправить</Button>
 
                         
                     </div>
 
                 </div>
 
-            </form>
+            </div>
         </div>
 
         </div>

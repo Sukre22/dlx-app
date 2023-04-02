@@ -4,6 +4,7 @@ import './app-menu-pages-2.scss';
 import {useDispatch} from "react-redux";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
 import Wavelength from './img/wavelength.jpg';
 import LuminousFlux from './img/luminous flux.png';
 import LightIntensity from './img/light intensity.jpg';
@@ -17,7 +18,11 @@ const AppMenuPages2 = ({onMenuOff}) => {
 
 
 
-
+	let navigate = useNavigate();
+    const routeChange3 = () =>{
+        let path = `3`;
+        navigate(path);
+    }
 	
 
 		const dispatch = useDispatch();
@@ -45,7 +50,7 @@ const AppMenuPages2 = ({onMenuOff}) => {
 								<h2 class='work'>2 Основные понятия и определения</h2>
 							</div>
 							<div class="app__page-header_top-container-right">
-								<ChevronRightIcon fontSize="large"/>
+								<Link to="/dlxevo/3"  style={{ textDecoration: 'none' }}><ChevronRightIcon fontSize="large"/> </Link>
 							</div>
 
 
