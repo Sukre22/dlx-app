@@ -3,6 +3,7 @@ import './../app-menu-pages-1/app-menu-pages-1.scss';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
 
 
 
@@ -14,25 +15,7 @@ export default class AppMenuPages41 extends Component {
 
 
 
-    const dataList = [
-
-        {
-            id: 3,
-            name: '3 Знакомство с интерфейсом программы',
-            files: 'Урок-3.zip',
-            taskFirst: 'Первое задание',
-            taskSecond: 'Второе задание'
-        },
-
-        {
-            id: 4.1,
-            name: '4.1 Импорт чертежей различных форматов',
-            files: 'Урок-4.1.zip',
-            taskFirst: 'Третье задание',
-            taskSecond: 'Четвертое задание'
-        }
-
-    ];
+    
 
         const {onMenuOff} = this.props;
 
@@ -56,13 +39,13 @@ export default class AppMenuPages41 extends Component {
 
                 <div class="app__page-header_top-container">
                     <div class="app__page-header_top-container-left">
-                        <ChevronLeftIcon fontSize="large"/>
+                    <Link to="/dlxevo/3" ><ChevronLeftIcon fontSize="large"/></Link>
                     </div>
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>4.1 Импорт чертежей различных форматов</h2>
                     </div>
                     <div class="app__page-header_top-container-right">
-                        <ChevronRightIcon  fontSize="large"/>
+                    <Link to="/dlxevo/4.2" ><ChevronRightIcon fontSize="large" /></Link>
                         
                     </div>
 

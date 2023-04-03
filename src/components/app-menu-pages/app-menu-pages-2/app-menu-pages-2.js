@@ -1,6 +1,7 @@
 import { dividerClasses } from '@mui/material';
 import React, {Component} from 'react';
 import './app-menu-pages-2.scss';
+
 import {useDispatch} from "react-redux";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -23,6 +24,8 @@ const AppMenuPages2 = ({onMenuOff}) => {
         let path = `3`;
         navigate(path);
     }
+
+	
 	
 
 		const dispatch = useDispatch();
@@ -44,13 +47,13 @@ const AppMenuPages2 = ({onMenuOff}) => {
 					<div class="app__page-header_top">
 						<div class="app__page-header_top-container">
 							<div class="app__page-header_top-container-left">
-								<ChevronLeftIcon fontSize="large"/>
+							<Link to="/dlxevo" ><ChevronLeftIcon fontSize="large"/></Link>
 							</div>
 							<div class="app__page-header_top-container-title">
 								<h2 class='work'>2 Основные понятия и определения</h2>
 							</div>
 							<div class="app__page-header_top-container-right">
-								<Link to="/dlxevo/3"  style={{ textDecoration: 'none' }}><ChevronRightIcon fontSize="large"/> </Link>
+								<Link to="/dlxevo/3" ><ChevronRightIcon fontSize="large" /></Link>
 							</div>
 
 

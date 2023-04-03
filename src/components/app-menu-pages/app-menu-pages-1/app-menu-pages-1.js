@@ -15,11 +15,11 @@ const AppMenuPages1 = ({onMenuOff}) => {
 
     
 
-    let navigate = useNavigate();
+  /*  let navigate = useNavigate();
     const routeChange3 = () =>{
         let path = `guide`;
         navigate(path);
-    }
+    }*/
 
    
 
@@ -58,7 +58,7 @@ const AppMenuPages1 = ({onMenuOff}) => {
                     <div class="app__page-header_top-container-right" >
                   
                         
-                       { <ChevronRightIcon  fontSize="large" onClick={routeChange3}/>}
+                    <Link to="/dlxevo/guide" style={{textDecoration: 'none'}}><ChevronRightIcon fontSize="large" /></Link>
 
                       
                         

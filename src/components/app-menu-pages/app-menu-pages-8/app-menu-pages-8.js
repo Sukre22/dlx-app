@@ -3,6 +3,7 @@ import './../app-menu-pages-1/app-menu-pages-1.scss';
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import {NavLink, useNavigate, Link, Outlet, useLocation, Navigate} from 'react-router-dom';
 
 
 
@@ -38,7 +39,7 @@ export default class AppMenuPages8 extends Component {
 
                 <div class="app__page-header_top-container">
                     <div class="app__page-header_top-container-left">
-                        <ChevronLeftIcon fontSize="large"/>
+                    <Link to="/dlxevo/7" ><ChevronLeftIcon fontSize="large"/></Link>
                     </div>
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>8 Заключение</h2>

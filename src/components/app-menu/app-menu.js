@@ -108,10 +108,10 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 
 					</div>
 					<div className="app__menu-top_left">
-						<Stack direction="row" spacing={1}>
+						{/*<Stack direction="row" spacing={1}>
 							<Chip label=">" variant="outlined" onClick={routeChange}/>
 							<Chip label="Dialux 4.13"  onClick={routeChange2}/>
-						</Stack>
+		</Stack>*/}
 						<IconButton
 
 							size="large"
