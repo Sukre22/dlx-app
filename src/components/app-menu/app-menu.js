@@ -103,7 +103,7 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 						</div>
 						<div className="app__menu-top_right-description">
 							<EmojiObjectsIcon fontSize="large"/>
-							<div>Обучающий курс по Dialux Evo</div>
+							<div className="app__menu-top_right-description-first">Обучающий курс по Dialux Evo</div>
 						</div>
 
 					</div>
