@@ -71,11 +71,10 @@ const AppMenuPages1 = ({onMenuOff}) => {
 
                     <iframe width="1140" height="640" 
                     src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                     encrypted-media; gyroscope; picture-in-picture; web-share" 
-                     allowfullscreen>
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture">                  
 
-                    </iframe>
+                     </iframe>
 
 
 

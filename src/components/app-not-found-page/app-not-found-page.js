@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import './app-not-found-page.scss';
 import {NavLink} from 'react-router-dom';
 import {Navigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -49,16 +50,13 @@ const AppNotfoundpage = ({onMenuOff}) => {
                 <div className="app__menu-top_right">
 
                     <div className="app__menu-top_right-description">
-                        <EmojiObjectsIcon fontSize="large"/>
-                        <div>Обучающий курс по Dialux Evo/Dialux 4.13</div>
+                    <Link to="/"><EmojiObjectsIcon fontSize="large"/></Link>
+                    <Link to="/"><div>Обучающий курс по Dialux Evo</div></Link>
                     </div>
 
                 </div>
                 <div className="app__menu-top_left">
-                    <Stack direction="row" spacing={1}>
-                        <Chip label="Dialux Evo" onClick={handleClick}/>
-                        <Chip label="Dialux 4.13" variant="outlined" onClick={handleClick}/>
-                    </Stack>
+                   
                     <IconButton
 
                         size="large"
@@ -111,7 +109,7 @@ const AppNotfoundpage = ({onMenuOff}) => {
                     </div>
                     <div className="app__home-title">
 
-                        <h3 className='app__home-title-h3'>Вы можете перейти на <NavLink to={"/"}>главную страницу</NavLink></h3>
+                        <h3 className='app__home-title-h3'>Вы можете перейти на <NavLink to={"/"}><u>главную страницу</u></NavLink></h3>
 
                     </div>
 

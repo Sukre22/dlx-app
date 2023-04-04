@@ -137,7 +137,7 @@
 }
 
 .app__menu-top_right-description-first {
-	display: block;
+	white-space: nowrap; /* Запрещаем перенос текста */
 }
 
 

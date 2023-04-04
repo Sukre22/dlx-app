@@ -169,3 +169,7 @@ img {
 .btn:hover {
   background-color: #ebebeb;
 }
+
+.app__menu-top_right-description {
+  white-space: nowrap; /* Запрещаем перенос текста */
+}

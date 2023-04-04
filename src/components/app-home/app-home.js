@@ -1,6 +1,7 @@
 import React, {Component, useState} from 'react';
 import './app-home.scss';
-import {useNavigate, NavLink, Navigate, useLocation} from 'react-router-dom';
+import {useNavigate, NavLink, Navigate, useLocation, Link} from 'react-router-dom';
+
 import {useAuth} from 'hooks/use-auth';
 import {useDispatch} from "react-redux";
 import {removeUser} from "store/slices/userSlice";
@@ -65,16 +66,13 @@ const AppHome = ({onMenuOff}) => {
                     <div className="app__menu-top_right">
 
                         <div className="app__menu-top_right-description">
-                            <EmojiObjectsIcon fontSize="large"/>
-                            <div>Обучающий курс по Dialux Evo/Dialux 4.13</div>
+                        <Link to="/"><EmojiObjectsIcon fontSize="large"/></Link>
+                            <div><Link to="/">Обучающий курс по Dialux Evo</Link></div>
                         </div>
 
                     </div>
                     <div className="app__menu-top_left">
-                        <Stack direction="row" spacing={1}>
-                            <Chip label=">" /*variant="outlined"*/ onClick={routeChange}/>
-                            <Chip label="Dialux 4.13" /*variant="outlined"*/ onClick={routeChange2}/>
-                        </Stack>
+           
                         <IconButton
 
                             size="large"
