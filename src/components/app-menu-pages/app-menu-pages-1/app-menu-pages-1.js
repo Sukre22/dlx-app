@@ -55,12 +55,9 @@ const AppMenuPages1 = ({onMenuOff}) => {
                     <div class="app__page-header_top-container-title">
                         <h2 class='work'>1 Введение</h2>
                     </div>
-                    <div class="app__page-header_top-container-right" >
-                  
+                    <div class="app__page-header_top-container-right">               
                         
-                    <Link to="/dlxevo/guide" style={{textDecoration: 'none'}}><ChevronRightIcon fontSize="large" /></Link>
-
-                      
+                    <Link to="/dlxevo/guide" style={{textDecoration: 'none'}}><ChevronRightIcon fontSize="large" /></Link>                     
                         
                     </div>
 
@@ -69,12 +66,12 @@ const AppMenuPages1 = ({onMenuOff}) => {
                 <div className="app__page-title_video">
                     <div class="video">
 
-                    <iframe width="1140" height="640" 
+                   <iframe width="1140" height="640" 
                     src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
-                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     frameborder="0"  allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture">                  
 
-                     </iframe>
+    </iframe>
 
 
 

@@ -165,11 +165,8 @@ const AppEntry = (props) => {
                     </div>
                     <div className="form__container-button">
                         {/*<button type="submit" className="form__container-button-press">Войти</button>*/}
-                        <Button type="submit" variant="outlined"
-                        classes={{
-                            color: '#787878',
-                            width: '200px'
-                        }}
+                        <Button type="submit"  variant="outlined"
+                        sx={{ color: '#787878', backgroundColor: 'white', borderColor: '#787878', borderRadius: '10px', width: '110px', height: '45px' }}
                         >
                             Войти</Button>
                         {/* <LoadingButton
