@@ -10,6 +10,7 @@ import {removeUser} from "store/slices/userSlice";
 import {setUser} from 'store/slices/userSlice';
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate, Navigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 //import LoadingButton from '@mui/lab/LoadingButton';
 
 
@@ -158,7 +159,7 @@ const AppEntry = (props) => {
                     <div className="form__container-checkbox">
                         <div className="form__container-checkbox-wrap">                          
                                 
-                                <div className="form__container-checkbox-label" onClick={triggerResetEmail} >Забыли пароль?</div>
+                                <div className="form__container-checkbox-label" ><Link to="/forgotpassword">Забыли пароль?</Link></div>
                         </div>
 
                         

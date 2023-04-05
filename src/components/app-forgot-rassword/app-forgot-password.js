@@ -10,6 +10,7 @@ import {removeUser} from "store/slices/userSlice";
 import {setUser} from 'store/slices/userSlice';
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate, Navigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 //import LoadingButton from '@mui/lab/LoadingButton';
 
 
@@ -22,49 +23,28 @@ const AppForgotPassword = (props) => {
 
         <div class="form__body_FP">
         <div className="form__container_FP">
-            <div novalidate>
+            <div className="form__container_FP-container" >
 
-                <h1 className="form__container-title_FP">Введите email</h1>
+                <h1 className="form__container-title_FP">Если забыли пароль от профиля напишите нам на почту или в телеграм:</h1>
                 <div className="form__container-wrap_FP">
-
-
-                    <div className="form__container-group_FP">
-
-                        <input className="form__container-group-input_FP"
-                               placeholder="Введите email"
-                               type="password"
-                               name="password" />
-
-
-
-                    </div>
-                    <div className="form__container-checkbox_FP">
-                        {/*<div className="form__container-checkbox-wrap_FP">
-
-                                <div className="form__container-checkbox-label_FP">Забыли пароль?</div>
-                        </div>*/}
-
-
-                    </div>
-                    <div className="form__container-button_FP">
-
-                        <Button type="submit" variant="outlined"
-                        classes={{
-                            color: '#787878',
-                            width: '200px'
-                        }}
-                        >
-                            Отправить</Button>
+                         
+                         <h2 className="form__container-wrap_FP-h2">Почта: edu@isaevrail.ru</h2>
+                         <h2 className="form__container-wrap_FP-h2">Телеграм: sukre22</h2>            
+                  
 
                         
                     </div>
+
+                <div>
+                <h1 className="form__container-title_FP">В ответном письме вышлем новый пароль. <p className="new"><Link to="/" >Перейти на страницу авторизации.</Link></p></h1>
+                </div>
 
                 </div>
 
             </div>
         </div>
 
-        </div>
+        
 
 
     )

@@ -25,7 +25,7 @@ import AppMenuPages8 from '../app-menu-pages/app-menu-pages-8/app-menu-pages-8.j
 import AppHome from '../app-home/app-home.js';
 import AppEntry from "../app-entry/app-entry";
 import AppNotfoundpage from "../app-not-found-page/app-not-found-page";
-//import AppForgotPassword from "../app-forgot-rassword/app-forgot-password.js";
+import AppForgotPassword from "../app-forgot-rassword/app-forgot-password.js";
 
 
 
@@ -46,7 +46,7 @@ const App = (props) => {
                 <Provider store={store}>
                  <PersistGate loading={null} persistor={persistor}>
                   <Routes>
-                    {/*<Route path='/forgotpassword' element={<AppForgotPassword/>}/>*/}
+                    <Route path='/forgotpassword' element={<AppForgotPassword/>}/>
                     <Route path='/' element={<AppHome/>}/>
                     <Route path='/login' element={<AppEntry/>}/>
 
