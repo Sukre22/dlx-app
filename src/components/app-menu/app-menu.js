@@ -225,14 +225,14 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 					className={"app__menu-list-part"}
 					end
 					style={setActive}
-					to="/dlxevo/5.1">5.1 Расстановка и настройка светильников</NavLink>
+					to="/dlxevo/5.1">5.1 Создание расчетных поверхностей</NavLink>
 				</li>
 
 				<li><NavLink
 					className={"app__menu-list-part"}
 					end
 					style={setActive}
-					to="/dlxevo/5.2">5.2 Создание расчетных поверхностей</NavLink>
+					to="/dlxevo/5.2">5.2 Расстановка и настройка светильников</NavLink>
 				</li>
 
 				<li><NavLink

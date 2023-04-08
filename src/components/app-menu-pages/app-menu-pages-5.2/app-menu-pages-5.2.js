@@ -42,7 +42,7 @@ export default class AppMenuPages52 extends Component {
                     <Link to="/dlxevo/5.1" ><ChevronLeftIcon fontSize="large"/></Link>
                     </div>
                     <div class="app__page-header_top-container-title">
-                        <h2 class='work'>5.2 Создание расчетных поверхностей</h2>
+                        <h2 class='work'>5.2 Расстановка и настройка светильников</h2>
                     </div>
                     <div class="app__page-header_top-container-right">
                     <Link to="/dlxevo/5.3" ><ChevronRightIcon fontSize="large" /></Link>
