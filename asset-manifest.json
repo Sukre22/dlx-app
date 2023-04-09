@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dlx-app/static/css/main.0b2ddfe8.css",
-    "main.js": "/dlx-app/static/js/main.1a998269.js",
+    "main.css": "/dlx-app/static/css/main.f65bb397.css",
+    "main.js": "/dlx-app/static/js/main.60416ab9.js",
     "static/media/IP.png": "/dlx-app/static/media/IP.f44bb90c78fd2ae4c40c.png",
     "static/media/cri.png": "/dlx-app/static/media/cri.9ed2740a79eb22b2bd1c.png",
     "static/media/luminous flux.png": "/dlx-app/static/media/luminous flux.92079416902043156a97.png",
@@ -10,11 +10,11 @@
     "static/media/light intensity.jpg": "/dlx-app/static/media/light intensity.0859a42e8e7edc0f5b22.jpg",
     "static/media/wavelength.jpg": "/dlx-app/static/media/wavelength.c41c20e4f240b7cb1eff.jpg",
     "index.html": "/dlx-app/index.html",
-    "main.0b2ddfe8.css.map": "/dlx-app/static/css/main.0b2ddfe8.css.map",
-    "main.1a998269.js.map": "/dlx-app/static/js/main.1a998269.js.map"
+    "main.f65bb397.css.map": "/dlx-app/static/css/main.f65bb397.css.map",
+    "main.60416ab9.js.map": "/dlx-app/static/js/main.60416ab9.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b2ddfe8.css",
-    "static/js/main.1a998269.js"
+    "static/css/main.f65bb397.css",
+    "static/js/main.60416ab9.js"
   ]
 }
