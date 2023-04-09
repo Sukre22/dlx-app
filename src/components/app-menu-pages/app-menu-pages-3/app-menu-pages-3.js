@@ -55,7 +55,7 @@ export default class AppMenuPages3 extends Component {
                     <div class="video">
 
                     <iframe width="1140" height="640" 
-                    src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
+                    src="https://www.youtube.com/embed/qkqmyK9bmLE" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture; web-share" 
                      allowfullscreen>
@@ -74,7 +74,7 @@ export default class AppMenuPages3 extends Component {
                         </video> */}
                     </div>
                 </div>
-                <div class="app__page-title_files">
+                {/*<div class="app__page-title_files">
                         <h3>Файлы</h3>
                    <div class="app__page-title_files-wrap">
                             <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
@@ -82,15 +82,16 @@ export default class AppMenuPages3 extends Component {
                             <p className="app__page-title_files-wrap-zip">Урок-3.zip</p>
                         </div>
 
-                </div>
+                    </div>*/}
 
                 <div class="app__page-title_files-task">
                     <h3>Задание</h3>
                     <ul className="app__page-title_files-text">
                                 <li> 
-                                    Повторить работу на уроке.
+                                 Скачать и установить Dialux Evo.
+
                                 </li>
-                                <li>Сделать самостоятельно по новому плану.</li>
+                                <li>Задать дефолтные значения по примеру.</li>
 
                     </ul>
 

@@ -51,7 +51,7 @@ export default class AppMenuPages8 extends Component {
 
 
                 </div>
-                <div className="app__page-title_video">
+               {/* <div className="app__page-title_video">
                     <div class="video">
 
                     <iframe width="1140" height="640" 
@@ -64,27 +64,20 @@ export default class AppMenuPages8 extends Component {
 
 
 
-                         {/*<iframe width="1140" height="640" src="https://youtu.be/aBywpDjDixU"
-                                title="YouTube video player" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen>
-                        </iframe>
-                        {/*<video width="1140" height="640" controls controlsList="nodownload">
-                            <source src={video1} type="video/mp4" />
-                        </video> */}
-                    </div>
-                </div>
+            </div>
+            </div>*/}
                 <div class="app__page-title_files">
-                        <h3>Файлы</h3>
+                <h3>Видеоурок в разработке, он будет добавлен в ближайшее время.</h3>
+                      {/*  <h3>Файлы</h3>
                    <div class="app__page-title_files-wrap">
                             <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
 
                             <p className="app__page-title_files-wrap-zip">Урок-8.zip</p>
-                        </div>
+        </div>*/}
 
                 </div>
 
-                <div class="app__page-title_files-task">
+               {/* <div class="app__page-title_files-task">
                     <h3>Задание</h3>
                     <ul className="app__page-title_files-text">
                                 <li> 
@@ -94,7 +87,7 @@ export default class AppMenuPages8 extends Component {
 
                     </ul>
 
-                </div>
+    </div>*/}
 
             </div>
 

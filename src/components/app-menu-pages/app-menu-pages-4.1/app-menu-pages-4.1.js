@@ -55,7 +55,7 @@ export default class AppMenuPages41 extends Component {
                     <div class="video">
 
                     <iframe width="1140" height="640" 
-                    src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
+                    src="https://www.youtube.com/embed/qesWz3wFCKc" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture; web-share" 
                      allowfullscreen>
@@ -77,9 +77,9 @@ export default class AppMenuPages41 extends Component {
                 <div class="app__page-title_files">
                         <h3>Файлы</h3>
                    <div class="app__page-title_files-wrap">
-                            <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
+                            <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="https://disk.yandex.ru/d/OG98cBwK6LBtrw" target="_blank"><CloudDownloadIcon/></a></div>
 
-                            <p className="app__page-title_files-wrap-zip">Урок-4.1.zip</p>
+                            <p className="app__page-title_files-wrap-zip"><a href="https://disk.yandex.ru/d/OG98cBwK6LBtrw" target="_blank">Урок-4.1.zip</a></p>
                         </div>
 
                 </div>
@@ -88,9 +88,9 @@ export default class AppMenuPages41 extends Component {
                     <h3>Задание</h3>
                     <ul className="app__page-title_files-text">
                                 <li> 
-                                    Повторить работу на уроке.
+                                Подготовить файлы DWG и импортировать 1 этаж.
                                 </li>
-                                <li>Сделать самостоятельно по новому плану.</li>
+                               
 
                     </ul>
 

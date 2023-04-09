@@ -67,7 +67,7 @@ const AppMenuPages1 = ({onMenuOff}) => {
                     <div class="video">
 
                    <iframe width="1140" height="640" 
-                    src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
+                    src="https://www.youtube.com/embed/DN1pGxd6HKU" title="YouTube video player" 
                      frameborder="0"  allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture">                  
 
@@ -78,17 +78,17 @@ const AppMenuPages1 = ({onMenuOff}) => {
                          
                     </div>
                 </div>
-                <div class="app__page-title_files">
+                {/*<div class="app__page-title_files">
                         <h3>Файлы</h3>
                    <div class="app__page-title_files-wrap">
                             <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
 
                             <p className="app__page-title_files-wrap-zip">Урок-1.zip</p>
-                        </div>
+    </div>
 
-                </div>
+                </div>*/}
 
-                <div class="app__page-title_files-task">
+              {/*  <div class="app__page-title_files-task">
                     <h3>Задание</h3>
                     <ul className="app__page-title_files-text">
                                 <li> 
@@ -98,7 +98,7 @@ const AppMenuPages1 = ({onMenuOff}) => {
 
                     </ul>
 
-                </div>
+    </div>*/}
 
             </div>
 

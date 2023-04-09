@@ -55,7 +55,7 @@ export default class AppMenuPages45 extends Component {
                     <div class="video">
 
                     <iframe width="1140" height="640" 
-                    src="https://www.youtube.com/embed/aBywpDjDixU" title="YouTube video player" 
+                    src="https://www.youtube.com/embed/BIE2KiW4Wbo" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                      encrypted-media; gyroscope; picture-in-picture; web-share" 
                      allowfullscreen>
@@ -77,10 +77,10 @@ export default class AppMenuPages45 extends Component {
                 <div class="app__page-title_files">
                         <h3>Файлы</h3>
                    <div class="app__page-title_files-wrap">
-                            <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="#"><CloudDownloadIcon/></a></div>
+                   <div class="app__page-title_files-wrap-icon"><a class="app__page-title_files-wrap-icon-a" href="https://disk.yandex.ru/d/5f-jJ0-we0lG-g" target="_blank"><CloudDownloadIcon/></a></div>
 
-                            <p className="app__page-title_files-wrap-zip">Урок-4.5.zip</p>
-                        </div>
+                 <p className="app__page-title_files-wrap-zip"><a href="https://disk.yandex.ru/d/5f-jJ0-we0lG-g" target="_blank">Урок-4.5.zip</a></p>
+                    </div>
 
                 </div>
 
@@ -88,9 +88,9 @@ export default class AppMenuPages45 extends Component {
                     <h3>Задание</h3>
                     <ul className="app__page-title_files-text">
                                 <li> 
-                                    Повторить работу на уроке.
+                                Повторить, проделанную на уроке работу.
                                 </li>
-                                <li>Сделать самостоятельно по новому плану.</li>
+                                <li>Сделать цветовое оформление остальных помещений по своему вкусу.</li>
 
                     </ul>
 
