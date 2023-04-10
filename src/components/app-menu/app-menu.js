@@ -283,9 +283,9 @@ const AppMenu = ({onBurgerChange, onMenuOff}) => {
 
 				<footer className="app__footer">
 					<div class="app__footer-links">
-						<p><a href="#">О проекте</a></p>
-						<p><a href="#">Рекламодателям</a></p>
-						<p><a href="#">Сотрудничество</a></p>
+						<p><a href="https://edudialux.ru/" target="_blank">О проекте</a></p>
+						<p><a href="https://edudialux.ru/" target="_blank">Рекламодателям</a></p>
+						<p><a href="https://edudialux.ru/" target="_blank">Сотрудничество</a></p>
 					</div>
 					<p class="app__footer-copyright">© Р. Р. Исаев, 2023</p>
 				</footer>
