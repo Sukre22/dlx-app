@@ -29,7 +29,7 @@ const AppForgotPassword = (props) => {
                 <div className="form__container-wrap_FP">
                          
                          <h2 className="form__container-wrap_FP-h2">Почта: edu@isaevrail.ru</h2>
-                         <h2 className="form__container-wrap_FP-h2">Телеграм: sukre22</h2>            
+                         <h2 className="form__container-wrap_FP-h2">Телеграм: @edudialux</h2>            
                   
 
                         
